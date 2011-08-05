@@ -1,4 +1,4 @@
-.h2 OpenLayers Timeline
+h2. OpenLayers Timeline
 
 OpenLayers Timeline is a simple library to create a time related map with OpenLayers.
 Currently it supports source data from GeoJSON or GeoRSS.
@@ -6,24 +6,24 @@ Currently it supports source data from GeoJSON or GeoRSS.
 See a demo at http://volpino.github.com/openlayers-timeline/
 
 
-.h3 Deps
+h3. Deps
 
 * jQuery
 * jQuery-UI Slider
 
 
-.h3 Basic Usage
+h3. Basic Usage
 
 * Include dependancies
 * create a OpenLayers Timeline object
 * initialize Timeline and enjoy!
 
 
-.h3 API Documentation
+h3. API Documentation
 
 Write me!
 
 
-.h3 Contribute!
+h3. Contribute!
 
 Feel free to fork, report bugs, send patches or suggestions :D
