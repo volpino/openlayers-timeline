@@ -10,7 +10,7 @@
     <script src="lib/jquery-1.4.4.min.js" type="text/javascript"></script>
     <script src="lib/jquery-ui-1.8.14.custom.min.js" type="text/javascript"></script>
     <script src="http://openlayers.org/api/OpenLayers.js" type="text/javascript"></script>
-    <script src="lib/OpenLayers.Format.GeoRSSTimeline.js" type="text/javascript"></script>
+    <script src="lib/OpenLayers.Format.GeoJSONTimeline.js" type="text/javascript"></script>
     <script src="timeline.js" type="text/javascript"></script>
 
     <script type="text/javascript">
@@ -18,28 +18,20 @@
 
         function init(){
             map = new OpenLayers.Map('map');
-            layer = new OpenLayers.Layer.WMS("OpenLayers WMS",
+            layer = new OpenLayers.Layer.WMS( "OpenLayers WMS",
                     "http://vmap0.tiles.osgeo.org/wms/vmap0",
                     {layers: 'basic'}, {numZoomLevels: 5});
             map.addLayer(layer);
             map.setCenter(new OpenLayers.LonLat(0, 0), 2);
-            var ts_funct = function(d) {
-                return ((new Date(d)).getTime() / 1000);
-            }
             timeline = new OpenLayers.Timeline({map: map,
                                                 timeline: "#timeline",
-                                                date_key: "published",
-                                                date_funct: ts_funct,
-                                                format: OpenLayers.Format.GeoRSSTimeline});
+                                                date_key: "when",
+                                                format: OpenLayers.Format.GeoJSONTimeline});
 
-            $.ajax({
-                type: "GET",
-                url: "flickr.xml",
-                dataType: "xml",
-                success: function(data) {
-                    $("#status").text("Data loaded");
-                    timeline.initTimeline(data);
-                }
+            var url = "http://toolserver.org/~sonet/api_geojson.php?article=OpenLayers&callback=?";
+            $.getJSON(url, function(data) {
+                $("#status").text("Data loaded");
+                timeline.initTimeline(data);
             });
         }
 
@@ -61,9 +53,12 @@
     </script>
   </head>
   <body>
-    <h1 id="title">OpenLayers Timeline GeoRSS Demo</h1>
+    <h1 id="title">OpenLayers Timeline GeoJSON Demo</h1>
     <div id="container">
-      <p>You're are seeing the timeline of <a href="flickr.xml">this GeoRSS</a> taken from the GeoTagging group on Flickr</p>
+      <p>
+        The source of the data is <a href="http://toolserver.org/~sonet/api_geojson.php">Toolserver</a>.
+        It represents anonymous edits on the OpenLayers Wikipedia page.
+      </p>
       <p id="status">Loading...</p>
       <div id="controls">
         <input type="button" onclick="timeline.togglePlay();" value="Play/Pause" />

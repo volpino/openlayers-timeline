@@ -8,217 +8,6 @@
  */
 
 /**
- * Class: OpenLayers.Format.GeoRSSTimeline
- * This class represents a GeoRSS format with time support
- */
-OpenLayers.Format.GeoRSSTimeline = OpenLayers.Class(OpenLayers.Format.GeoRSS, {
-    past_seconds: 0,
-    when: "when",
-    first: undefined,
-    lowerlimit: undefined,
-    timestamp_funct: undefined,
-
-    createFeatureFromItem: function(item) {
-        var geometry = this.createGeometryFromItem(item);
-        var date = this.getChildValue(item, "*", this.when);
-        if (date) {
-            if (this.timestamp_funct) {
-                date = this.timestamp_funct(date);
-            }
-            console.log(date);
-            if (!this.first || this.first > date) {
-                this.first = date;
-            }
-            if (date > this.past_seconds) {
-                return;
-            }
-            if (this.lowerlimit && date < this.lowerlimit) {
-                return;
-            }
-        }
-
-        /* Provide defaults for title and description */
-        var title = this.getChildValue(item, "*", "title", this.featureTitle);
-
-        /* First try RSS descriptions, then Atom summaries */
-        var description = this.getChildValue(
-            item, "*", "description",
-            this.getChildValue(item, "*", "content",
-                this.getChildValue(item, "*", "summary", this.featureDescription)));
-
-        /* If no link URL is found in the first child node, try the
-           href attribute */
-        var link = this.getChildValue(item, "*", "link");
-        if(!link) {
-            try {
-                link = this.getElementsByTagNameNS(item, "*", "link")[0].getAttribute("href");
-            } catch(e) {
-                link = null;
-            }
-        }
-
-        var id = this.getChildValue(item, "*", "id", null);
-
-        var data = {
-            "title": title,
-            "description": description,
-            "link": link
-        };
-        var feature = new OpenLayers.Feature.Vector(geometry, data);
-        feature.fid = id;
-        return feature;
-
-    },
-
-    read: function(doc) {
-        if (typeof doc == "string") {
-            doc = OpenLayers.Format.XML.prototype.read.apply(this, [doc]);
-        }
-
-        /* Try RSS items first, then Atom entries */
-        var itemlist = null;
-        itemlist = this.getElementsByTagNameNS(doc, '*', 'item');
-        if (itemlist.length == 0) {
-            itemlist = this.getElementsByTagNameNS(doc, '*', 'entry');
-        }
-
-        var numItems = itemlist.length;
-        var features = [];
-        for(var i=0; i<numItems; i++) {
-            var r = this.createFeatureFromItem(itemlist[i]);
-            if (r) {
-                features.push(r);
-            }
-        }
-        return features;
-    },
-    CLASS_NAME: "OpenLayers.Format.GeoRSSTimeline"
-});
-
-/**
- * Class: OpenLayers.Format.GeoJSONTimeline
- * This class represents a GeoJSON format with time support
- */
-OpenLayers.Format.GeoJSONTimeline = OpenLayers.Class(OpenLayers.Format.GeoJSON, {
-    past_seconds: 0,
-    when: "when",
-    first: undefined,
-    lowerlimit: undefined,
-    timestamp_funct: undefined,
-
-    read: function(json, type, filter) {
-        type = (type) ? type : "FeatureCollection";
-        var results = null;
-        var obj = null;
-        if (typeof json == "string") {
-            obj = OpenLayers.Format.JSON.prototype.read.apply(this,
-                                                              [json, filter]);
-        } else {
-            obj = json;
-        }
-        if(!obj) {
-            OpenLayers.Console.error("Bad JSON: " + json);
-        } else if(typeof(obj.type) != "string") {
-            OpenLayers.Console.error("Bad GeoJSON - no type: " + json);
-        } else if(this.isValidType(obj, type)) {
-            switch(type) {
-                case "Geometry":
-                    try {
-                        results = this.parseGeometry(obj);
-                    } catch(err) {
-                        OpenLayers.Console.error(err);
-                    }
-                    break;
-                case "Feature":
-                    try {
-                        results = this.parseFeature(obj);
-                        results.type = "Feature";
-                    } catch(err) {
-                        OpenLayers.Console.error(err);
-                    }
-                    break;
-                case "FeatureCollection":
-                    // for type FeatureCollection, we allow input to be any type
-                    results = [];
-                    switch(obj.type) {
-                        case "Feature":
-                            try {
-                                var r = this.parseFeature(obj);
-                                if (r) {
-                                    results.push(r);
-                                }
-                            } catch(err) {
-                                results = null;
-                                OpenLayers.Console.error(err);
-                            }
-                            break;
-                        case "FeatureCollection":
-                            for(var i=0, len=obj.features.length; i<len; ++i) {
-                                try {
-                                    var r = this.parseFeature(obj.features[i]);
-                                    if (r) {
-                                        results.push(r);
-                                    }
-                                } catch(err) {
-                                    results = null;
-                                    OpenLayers.Console.error(err);
-                                }
-                            }
-                            break;
-                        default:
-                            try {
-                                var geom = this.parseGeometry(obj);
-                                results.push(new OpenLayers.Feature.Vector(geom));
-                            } catch(err) {
-                                results = null;
-                                OpenLayers.Console.error(err);
-                            }
-                    }
-                break;
-            }
-        }
-        return results;
-    },
-
-    parseFeature: function(obj) {
-        var feature, geometry, attributes, bbox, when;
-        attributes = (obj.properties) ? obj.properties : {};
-        when = attributes[this.when];
-        if (this.timestamp_funct) {
-            when = this.timestamp_funct(when);
-        }
-        if (when) {
-            if (!this.first || this.first > when) {
-                this.first = when;
-            }
-            if (when > this.past_seconds) {
-                return;
-            }
-            if (this.lowerlimit && when < this.lowerlimit) {
-                return;
-            }
-        }
-        bbox = (obj.geometry && obj.geometry.bbox) || obj.bbox;
-        try {
-            geometry = this.parseGeometry(obj.geometry);
-        } catch(err) {
-            // deal with bad geometries
-            throw err;
-        }
-        feature = new OpenLayers.Feature.Vector(geometry, attributes);
-        if(bbox) {
-            feature.bounds = OpenLayers.Bounds.fromArray(bbox);
-        }
-        if(obj.id) {
-            feature.fid = obj.id;
-        }
-        return feature;
-    },
-    CLASS_NAME: "OpenLayers.Format.GeoJSONTimeline"
-});
-
-
-/**
  * Class: OpenLayers.Timeline
  * This class represents a timeline based on jQuery-UI Slider
  */
@@ -245,7 +34,7 @@ OpenLayers.Timeline = OpenLayers.Class({
         this.curr_speed = parseInt(this.speeds.length / 2);
         this.data_format = new options.format();
         if (options.date_key) {
-            this.data_format.when = options.date_key;
+            this.data_format.date_key = options.date_key;
         }
         this.data_format.timestamp_funct = options.date_funct;
         var self = this;
@@ -418,6 +207,22 @@ OpenLayers.Timeline = OpenLayers.Class({
                 }
             }, 1000);
         }
+    },
+
+    getCurrentTime: function() {
+        return this.data_format.past_seconds;
+    },
+
+    getBarValue: function() {
+        return $(this.slider).slider("value");
+    },
+
+    setBarValue: function(value) {
+        $(this.slider).slider("value", value);
+    },
+
+    getCurrentSpeed: function(value) {
+        return this.speeds[this.curr_speed];
     },
 
     stopBar: function() {
