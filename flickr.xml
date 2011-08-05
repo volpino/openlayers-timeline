@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+      xmlns:georss="http://www.georss.org/georss"
+      xmlns:woe="http://where.yahooapis.com/v1/schema.rng"
+      xmlns:flickr="urn:flickr:"
+      xmlns:media="http://search.yahoo.com/mrss/">
+
+  <title>GeoTagging Flickr Pool</title>
+  <link rel="self" href="http://api.flickr.com/services/feeds/groups_pool.gne?id=94823070@N00&amp;georss=true" />
+  <link rel="alternate" type="text/html" href="http://www.flickr.com/groups/geotagging/pool/"/>
+  <id>tag:flickr.com,2005:/grouppool/94823070@N00</id>
+  <icon>http://farm1.static.flickr.com/10/buddyicons/94823070@N00.jpg?1157178977</icon>
+  <subtitle>The group is for discussing tips and methods of adding &amp;quot;geotags&amp;quot; aka location metadata to flickr images, Discussing locations on the geobloggers map worth checking out, Discussing the Geobloggers.com website and features etc.
+
+&lt;b&gt;Useful GeoTagging Tools&lt;/b&gt;
+
+* In case you missed the announcements or the extra links around the Flickr website, Flickr now supports geotagging your images directly in the website without the need for any extra add-ons. You can read more about the new built in GeoTaggging and Geo Viewing tools &lt;a href=&quot;http://blog.flickr.com/flickrblog/2006/08/great_shot_wher.html&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;.
+
+* &lt;a href=&quot;http://greasemonkey.mozdev.org&quot; rel=&quot;nofollow&quot;&gt;Greasemonkey&lt;/a&gt; :- A requirement for a number of GeoTagging tools
+
+* &lt;a href=&quot;http://mozilla.org/firefox&quot; rel=&quot;nofollow&quot;&gt;Firefox&lt;/a&gt; - Cool Web Browser required by GreaseMonkey
+
+* &lt;a href=&quot;http://flickr.com/groups/geotagging/discuss/72057594123393303/&quot;&gt;GMIF&lt;/a&gt;(Google Maps in Flickr) &lt;a href=&quot;http://flickr.com/photos/ckyuan's&quot;&gt;flickr.com/photos/ckyuan's&lt;/a&gt; excellent  GreaseMonkey script, this is a very slick javascript application that embeds itself right inside your Flickr photo page and allows you to easily add GeoTags to your images, view images that were taken nearby, and also has lots of other cool features too.
+
+* &lt;a href=&quot;http://maps.yuan.cc/&quot; rel=&quot;nofollow&quot;&gt;maps.yuan.cc/&lt;/a&gt; - &lt;a href=&quot;http://flickr.com/photos/ckyuan's&quot;&gt;flickr.com/photos/ckyuan's&lt;/a&gt; web application, a mashup of Google Maps and various APIs and XML sources. It allows you to geotag your Flickr photos and send to geotagged groups directly. It is also a geotagged viewer that can display everyone's geotagged photos.
+
+* &lt;a href=&quot;http://loc.alize.us&quot; rel=&quot;nofollow&quot;&gt;loc.alize.us&lt;/a&gt; A cool new GeoTagged image viewing website + &lt;a href=&quot;http://www.flickr.com/groups/geotagging/discuss/72157594165549916&quot;&gt;GeoCode within Flickr&lt;/a&gt; A neat GeoTagging Bookmarklet by &lt;a href=&quot;http://www.flickr.com/photos/aemkei/&quot;&gt;Aemkei&lt;/a&gt; 
+
+* &lt;a href=&quot;http://picasaweb.google.com/&quot; rel=&quot;nofollow&quot;&gt;Picassa Web Albums&lt;/a&gt; is the latest beta version of Picassa, Google's image management software, which now supports geotagging your photos via Google Earth. &lt;a href=&quot;http://www.flickr.com/groups/geotagging/discuss/72157594166393722&quot;&gt;More Info&lt;/a&gt;
+
+* EXIF &amp;quot;stamping&amp;quot; software, that embeds the geo coordinate information directly into the images themselves. Very useful if you have a GPS device. Examples include &lt;a href=&quot;http://www.robogeo.com/home/&quot; rel=&quot;nofollow&quot;&gt;RoboGEO&lt;/a&gt;, &lt;a href=&quot;http://wwmx.org/FAQ.aspx&quot; rel=&quot;nofollow&quot;&gt;WMMX Stamper&lt;/a&gt; and &lt;a href=&quot;http://flickrimportr.blogspot.com&quot; rel=&quot;nofollow&quot;&gt;Importr&lt;/a&gt; (BTW WMMX Stamper works with or or without a GPS device)
+
+* &lt;a href=&quot;http://flickr.com/groups/topic/60830/&quot;&gt;FlickrFly&lt;/a&gt; , &lt;a href=&quot;/photos/robroy&quot; rel=&quot;nofollow&quot;&gt;RobRoyAus&lt;/a&gt;'s cool application, lets you add a link on your photo pages, that lets a user fly to the location the photo was taken in Google Earth.
+
+* &lt;a href=&quot;http://flyr.whatfettle.com/&quot; rel=&quot;nofollow&quot;&gt;flyr&lt;/a&gt; is a cool tool that allows you to search the Flickr image site for keywords in text, titles, tags and descriptions... pretty much anything that is searchable within the Flickr site! Dubbed &amp;quot;Flyr&amp;quot;, your search results can be displayed as regular Flickr image results, plotted onto a Google Map or even opened up as an overlay in Google Earth.
+</subtitle>
+  <updated>2011-08-04T14:09:02Z</updated>
+  <generator uri="http://www.flickr.com/">Flickr</generator>
+
+  <entry>
+    <title>Ostseebad Nienhagen</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/pickade/6008141085/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/6008141085</id>
+    <published>2011-08-04T13:40:52Z</published>
+    <updated>2011-08-04T13:40:52Z</updated>
+    <dc:date.Taken>2011-08-03T16:53:33-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/pickade/&quot;&gt;pickade&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/pickade/6008141085/&quot; title=&quot;Ostseebad Nienhagen&quot;&gt;&lt;img src=&quot;http://farm7.static.flickr.com/6022/6008141085_6e694a6b46_m.jpg&quot; width=&quot;240&quot; height=&quot;160&quot; alt=&quot;Ostseebad Nienhagen&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Strand vom Ostseebad Nienhagen&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://loc.alize.us/#/flickr:6008141085&quot; rel=&quot;nofollow&quot;&gt;See where this picture was taken.&lt;/a&gt; &lt;a href=&quot;http://www.flickr.com/groups/geotagging/discuss/72157594165549916/&quot;&gt;[?]&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>pickade</name>
+      <uri>http://www.flickr.com/people/pickade/</uri>
+      <flickr:nsid>59511789@N07</flickr:nsid>
+    </author>
+    <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nd/2.0/deed.en" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm7.static.flickr.com/6022/6008141085_6e694a6b46_b.jpg" />
+    <category term="ocean" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="blue" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="trees" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="sunset" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="sea" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="sunlight" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="tree" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="nature" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="water" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="forest" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="germany" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="landscape" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="geotagged" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="deutschland" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="coast" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="foto" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="fotografie" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="balticsea" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="fotos" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="landschaft" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="wald" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="bäume" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="ostsee" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="baum" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="steilküste" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="mv" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="mecklenburg" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="beeches" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="nienhagen" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="ghostforest" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="hauntedforest" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="gespensterwald" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="spookyforest" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="csandrabartocha" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="geo:lat=54163928808505496" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="geo:lon=11943231635009738" scheme="http://www.flickr.com/photos/tags/" />
+  </entry>
+
+  <entry>
+    <title>Gespensterwald in Nienhagen</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/pickade/6008120975/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/6008120975</id>
+    <published>2011-08-04T13:32:04Z</published>
+    <updated>2011-08-04T13:32:04Z</updated>
+    <dc:date.Taken>2011-08-03T17:09:03-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/pickade/&quot;&gt;pickade&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/pickade/6008120975/&quot; title=&quot;Gespensterwald in Nienhagen&quot;&gt;&lt;img src=&quot;http://farm7.static.flickr.com/6001/6008120975_d237591f3d_m.jpg&quot; width=&quot;240&quot; height=&quot;160&quot; alt=&quot;Gespensterwald in Nienhagen&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Der 180 Hektar große Mischwald begrenzt Nienhagen auf einer Ortsseite. Er liegt direkt an der Ostsee - ein einzigartiger Natur-Kontrast. Die Herkunft des Namens &amp;quot;Gespensterwald&amp;quot; ist unbekannt. Offizieller Name des Waldes ist: &amp;quot;Nienhäger Holz&amp;quot;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://loc.alize.us/#/flickr:6008120975&quot; rel=&quot;nofollow&quot;&gt;See where this picture was taken.&lt;/a&gt; &lt;a href=&quot;http://www.flickr.com/groups/geotagging/discuss/72157594165549916/&quot;&gt;[?]&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>pickade</name>
+      <uri>http://www.flickr.com/people/pickade/</uri>
+      <flickr:nsid>59511789@N07</flickr:nsid>
+    </author>
+    <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nd/2.0/deed.en" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm7.static.flickr.com/6001/6008120975_d237591f3d_b.jpg" />
+    <category term="ocean" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="blue" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="trees" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="sunset" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="sea" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="sunlight" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="tree" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="nature" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="water" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="forest" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="germany" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="landscape" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="geotagged" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="deutschland" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="coast" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="foto" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="fotografie" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="balticsea" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="fotos" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="landschaft" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="wald" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="bäume" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="ostsee" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="baum" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="steilküste" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="mv" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="mecklenburg" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="beeches" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="nienhagen" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="ghostforest" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="hauntedforest" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="gespensterwald" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="spookyforest" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="csandrabartocha" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="geo:lat=5416147933204867" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="geo:lon=11931414741172716" scheme="http://www.flickr.com/photos/tags/" />
+  </entry>
+
+  <entry>
+    <title>Gespensterwald in Nienhagen</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/pickade/6008574134/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/6008574134</id>
+    <published>2011-08-04T12:48:52Z</published>
+    <updated>2011-08-04T12:48:52Z</updated>
+    <dc:date.Taken>2011-08-03T17:08:06-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/pickade/&quot;&gt;pickade&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/pickade/6008574134/&quot; title=&quot;Gespensterwald in Nienhagen&quot;&gt;&lt;img src=&quot;http://farm7.static.flickr.com/6029/6008574134_4fb20f3536_m.jpg&quot; width=&quot;240&quot; height=&quot;160&quot; alt=&quot;Gespensterwald in Nienhagen&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Der 180 Hektar große Mischwald begrenzt Nienhagen auf einer Ortsseite. Er liegt direkt an der Ostsee - ein einzigartiger Natur-Kontrast. Die Herkunft des Namens &amp;quot;Gespensterwald&amp;quot; ist unbekannt. Offizieller Name des Waldes ist: &amp;quot;Nienhäger Holz&amp;quot;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://loc.alize.us/#/flickr:6008574134&quot; rel=&quot;nofollow&quot;&gt;See where this picture was taken.&lt;/a&gt; &lt;a href=&quot;http://www.flickr.com/groups/geotagging/discuss/72157594165549916/&quot;&gt;[?]&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>pickade</name>
+      <uri>http://www.flickr.com/people/pickade/</uri>
+      <flickr:nsid>59511789@N07</flickr:nsid>
+    </author>
+    <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nd/2.0/deed.en" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm7.static.flickr.com/6029/6008574134_4fb20f3536_b.jpg" />
+    <category term="ocean" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="blue" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="trees" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="sunset" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="sea" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="sunlight" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="tree" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="nature" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="water" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="forest" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="germany" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="landscape" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="geotagged" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="deutschland" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="coast" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="balticsea" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="landschaft" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="wald" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="bäume" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="ostsee" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="baum" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="steilküste" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="mv" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="mecklenburg" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="beeches" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="nienhagen" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="ghostforest" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="hauntedforest" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="gespensterwald" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="spookyforest" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="csandrabartocha" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="geo:lat=5416277510002424" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="geo:lon=11938119765190095" scheme="http://www.flickr.com/photos/tags/" />
+  </entry>
+
+  <entry>
+    <title>Little Kitten</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/larandy/6008498718/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/6008498718</id>
+    <published>2011-08-04T12:09:07Z</published>
+    <updated>2011-08-04T12:09:07Z</updated>
+    <dc:date.Taken>2011-07-28T16:05:17-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/larandy/&quot;&gt;Photofreaks&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/larandy/6008498718/&quot; title=&quot;Little Kitten&quot;&gt;&lt;img src=&quot;http://farm7.static.flickr.com/6124/6008498718_67f3cdf0e2_m.jpg&quot; width=&quot;240&quot; height=&quot;240&quot; alt=&quot;Little Kitten&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Photo: Lara D.&lt;/p&gt;</content>
+    <author>
+      <name>Photofreaks</name>
+      <uri>http://www.flickr.com/people/larandy/</uri>
+      <flickr:nsid>39920793@N07</flickr:nsid>
+    </author>
+    <link rel="enclosure" type="image/jpeg" href="http://farm7.static.flickr.com/6124/6008498718_67f3cdf0e2_b.jpg" />
+    <georss:point>28.292289 -16.52086</georss:point>
+    <geo:lat>28.292289</geo:lat>
+    <geo:long>-16.52086</geo:long>
+    <woe:woeid>12578031</woe:woeid>
+  </entry>
+
+  <entry>
+    <title>Day twenty-three</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/annieflower/6007896555/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/6007896555</id>
+    <published>2011-08-04T11:37:59Z</published>
+    <updated>2011-08-04T11:37:59Z</updated>
+    <dc:date.Taken>2011-08-03T23:35:37-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/annieflower/&quot;&gt;H'anna Panofsky&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/annieflower/6007896555/&quot; title=&quot;Day twenty-three&quot;&gt;&lt;img src=&quot;http://farm7.static.flickr.com/6136/6007896555_7a555098e8_m.jpg&quot; width=&quot;240&quot; height=&quot;160&quot; alt=&quot;Day twenty-three&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+    <author>
+      <name>H'anna Panofsky</name>
+      <uri>http://www.flickr.com/people/annieflower/</uri>
+      <flickr:nsid>38594898@N06</flickr:nsid>
+    </author>
+    <link rel="enclosure" type="image/jpeg" href="http://farm7.static.flickr.com/6136/6007896555_7a555098e8_b.jpg" />
+    <category term="canon" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="project" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="eos" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="redentore" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="29days" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="60d" scheme="http://www.flickr.com/photos/tags/" />
+    <georss:point>37.505385 14.062285</georss:point>
+    <geo:lat>37.505385</geo:lat>
+    <geo:long>14.062285</geo:long>
+    <woe:woeid>711749</woe:woeid>
+  </entry>
+
+  <entry>
+    <title>Museum Station</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/xaviercloitre/6008389614/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/6008389614</id>
+    <published>2011-08-04T11:04:28Z</published>
+    <updated>2011-08-04T11:04:28Z</updated>
+    <dc:date.Taken>2011-08-04T12:58:46-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/xaviercloitre/&quot;&gt;Xavier Cloitre&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/xaviercloitre/6008389614/&quot; title=&quot;Museum Station&quot;&gt;&lt;img src=&quot;http://farm7.static.flickr.com/6131/6008389614_db619b130b_m.jpg&quot; width=&quot;240&quot; height=&quot;152&quot; alt=&quot;Museum Station&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Sydney, Australia&lt;/p&gt;</content>
+    <author>
+      <name>Xavier Cloitre</name>
+      <uri>http://www.flickr.com/people/xaviercloitre/</uri>
+      <flickr:nsid>43542079@N02</flickr:nsid>
+    </author>
+    <link rel="enclosure" type="image/jpeg" href="http://farm7.static.flickr.com/6131/6008389614_db619b130b_b.jpg" />
+    <category term="people" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="bw" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="woman" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="white" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="black" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="byn" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="blanco" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="girl" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="station" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="silhouette" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="museum" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="train" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="jaune" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="subway" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="photography" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="photo" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="movement" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="mujer" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="nikon" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="women" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="noir" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="photographie" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="shadows" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="y" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="femme" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="negro" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="sydney" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="australia" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="movimiento" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="nb" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="bn" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="d200" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="persons" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="fotografia" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="et" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="blanc" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="mouvement" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="australie" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="ombres" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="oceania" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="cirty" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="océanie" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="xaviercloitre" scheme="http://www.flickr.com/photos/tags/" />
+    <georss:point>-33.876374 151.209597</georss:point>
+    <geo:lat>-33.876374</geo:lat>
+    <geo:long>151.209597</geo:long>
+    <woe:woeid>1105779</woe:woeid>
+  </entry>
+
+  <entry>
+    <title>Via Bergamini</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/28792233@N04/6006449294/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/6006449294</id>
+    <published>2011-08-03T19:58:36Z</published>
+    <updated>2011-08-03T19:58:36Z</updated>
+    <dc:date.Taken>2011-08-03T21:58:36-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/28792233@N04/&quot;&gt;marinagrr&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/28792233@N04/6006449294/&quot; title=&quot;Via Bergamini&quot;&gt;&lt;img src=&quot;http://farm7.static.flickr.com/6007/6006449294_fc8294e665_m.jpg&quot; width=&quot;180&quot; height=&quot;240&quot; alt=&quot;Via Bergamini&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+    <author>
+      <name>marinagrr</name>
+      <uri>http://www.flickr.com/people/28792233@N04/</uri>
+      <flickr:nsid>28792233@N04</flickr:nsid>
+    </author>
+    <link rel="enclosure" type="image/jpeg" href="http://farm7.static.flickr.com/6007/6006449294_fc8294e665_b.jpg" />
+    <category term="italien" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="italy" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="milan" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="italia" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="dom" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="milano" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="università" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="duomo" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="mailand" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="madonnina" scheme="http://www.flickr.com/photos/tags/" />
+    <georss:point>45.462075 9.193893</georss:point>
+    <geo:lat>45.462075</geo:lat>
+    <geo:long>9.193893</geo:long>
+    <woe:woeid>718345</woe:woeid>
+  </entry>
+
+  <entry>
+    <title>guglie e nuvole</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/28792233@N04/6006465048/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/6006465048</id>
+    <published>2011-08-03T20:03:54Z</published>
+    <updated>2011-08-03T20:03:54Z</updated>
+    <dc:date.Taken>2010-08-15T13:31:37-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/28792233@N04/&quot;&gt;marinagrr&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/28792233@N04/6006465048/&quot; title=&quot;guglie e nuvole&quot;&gt;&lt;img src=&quot;http://farm7.static.flickr.com/6022/6006465048_973b8c5b4a_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;guglie e nuvole&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+    <author>
+      <name>marinagrr</name>
+      <uri>http://www.flickr.com/people/28792233@N04/</uri>
+      <flickr:nsid>28792233@N04</flickr:nsid>
+    </author>
+    <link rel="enclosure" type="image/jpeg" href="http://farm7.static.flickr.com/6022/6006465048_973b8c5b4a_b.jpg" />
+    <category term="italien" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="italy" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="milan" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="italia" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="dom" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="milano" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="università" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="duomo" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="mailand" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="madonnina" scheme="http://www.flickr.com/photos/tags/" />
+    <georss:point>45.464216 9.191104</georss:point>
+    <geo:lat>45.464216</geo:lat>
+    <geo:long>9.191104</geo:long>
+    <woe:woeid>718345</woe:woeid>
+  </entry>
+
+  <entry>
+    <title>guglia drammatica</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/28792233@N04/6005917391/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/6005917391</id>
+    <published>2011-08-03T20:02:18Z</published>
+    <updated>2011-08-03T20:02:18Z</updated>
+    <dc:date.Taken>2011-08-03T22:02:18-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/28792233@N04/&quot;&gt;marinagrr&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/28792233@N04/6005917391/&quot; title=&quot;guglia drammatica&quot;&gt;&lt;img src=&quot;http://farm7.static.flickr.com/6002/6005917391_5a9f1e361b_m.jpg&quot; width=&quot;180&quot; height=&quot;240&quot; alt=&quot;guglia drammatica&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+    <author>
+      <name>marinagrr</name>
+      <uri>http://www.flickr.com/people/28792233@N04/</uri>
+      <flickr:nsid>28792233@N04</flickr:nsid>
+    </author>
+    <link rel="enclosure" type="image/jpeg" href="http://farm7.static.flickr.com/6002/6005917391_5a9f1e361b_b.jpg" />
+    <category term="italien" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="italy" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="milan" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="italia" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="dom" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="milano" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="università" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="duomo" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="mailand" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="madonnina" scheme="http://www.flickr.com/photos/tags/" />
+    <georss:point>45.464216 9.191104</georss:point>
+    <geo:lat>45.464216</geo:lat>
+    <geo:long>9.191104</geo:long>
+    <woe:woeid>718345</woe:woeid>
+  </entry>
+
+  <entry>
+    <title>Montage of Harvard Square</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/eileansiar/6007942956/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/6007942956</id>
+    <published>2011-08-04T06:19:33Z</published>
+    <updated>2011-08-04T06:19:33Z</updated>
+    <dc:date.Taken>2011-08-04T02:19:33-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/eileansiar/&quot;&gt;eileansiar en vacances&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/eileansiar/6007942956/&quot; title=&quot;Montage of Harvard Square&quot;&gt;&lt;img src=&quot;http://farm7.static.flickr.com/6016/6007942956_7325bd2a36_m.jpg&quot; width=&quot;240&quot; height=&quot;175&quot; alt=&quot;Montage of Harvard Square&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Recent ipad photo app fun shown using Montage Pro&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://www.flickriver.com/photos/eileansiar/popular-interesting/&quot; rel=&quot;nofollow&quot;&gt;www.flickriver.com/photos/eileansiar/popular-interesting/&lt;/a&gt;&lt;br /&gt;
+Harvard:&lt;br /&gt;
+&lt;a href=&quot;http://map.harvard.edu/mapserver/campusmap.htm&quot; rel=&quot;nofollow&quot;&gt;map.harvard.edu/mapserver/campusmap.htm&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.harvard.edu/siteguide/listing/index.php&quot; rel=&quot;nofollow&quot;&gt;www.harvard.edu/siteguide/listing/index.php&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>eileansiar en vacances</name>
+      <uri>http://www.flickr.com/people/eileansiar/</uri>
+      <flickr:nsid>94073839@N00</flickr:nsid>
+    </author>
+    <link rel="enclosure" type="image/jpeg" href="http://farm7.static.flickr.com/6016/6007942956_7325bd2a36_b.jpg" />
+    <category term="cambridge" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="square" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="harvard" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="photomontage" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="app" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="ipad" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="eileansiar" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="montagepro" scheme="http://www.flickr.com/photos/tags/" />
+    <georss:point>42.373462 -71.118975</georss:point>
+    <geo:lat>42.373462</geo:lat>
+    <geo:long>-71.118975</geo:long>
+    <woe:woeid>23511009</woe:woeid>
+  </entry>
+
+  <entry>
+    <title>hb-005 ~totcupcakes~</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/totcupcakes/6007732411/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/6007732411</id>
+    <published>2011-08-04T09:48:57Z</published>
+    <updated>2011-08-04T09:48:57Z</updated>
+    <dc:date.Taken>2011-07-30T08:24:52-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/totcupcakes/&quot;&gt;totcupcakes&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/totcupcakes/6007732411/&quot; title=&quot;hb-005 ~totcupcakes~&quot;&gt;&lt;img src=&quot;http://farm7.static.flickr.com/6016/6007732411_e865ecfd6d_m.jpg&quot; width=&quot;159&quot; height=&quot;240&quot; alt=&quot;hb-005 ~totcupcakes~&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+    <author>
+      <name>totcupcakes</name>
+      <uri>http://www.flickr.com/people/totcupcakes/</uri>
+      <flickr:nsid>24765248@N02</flickr:nsid>
+    </author>
+    <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.en" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm7.static.flickr.com/6016/6007732411_e865ecfd6d_b.jpg" />
+    <category term="cake" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="cupcake" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="kek" scheme="http://www.flickr.com/photos/tags/" />
+  </entry>
+
+  <entry>
+    <title>Hudahaj</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/hadzinski/6002009187/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/6002009187</id>
+    <published>2011-08-02T17:00:04Z</published>
+    <updated>2011-08-02T17:00:04Z</updated>
+    <dc:date.Taken>2011-07-29T15:30:54-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/hadzinski/&quot;&gt;paval hadzinski&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/hadzinski/6002009187/&quot; title=&quot;Hudahaj&quot;&gt;&lt;img src=&quot;http://farm7.static.flickr.com/6028/6002009187_fc44c55358_m.jpg&quot; width=&quot;240&quot; height=&quot;159&quot; alt=&quot;Hudahaj&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Гудагай. касьцёл Маці Божай Шпаклернай&lt;/p&gt;</content>
+    <author>
+      <name>paval hadzinski</name>
+      <uri>http://www.flickr.com/people/hadzinski/</uri>
+      <flickr:nsid>41373997@N08</flickr:nsid>
+    </author>
+    <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.en" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm7.static.flickr.com/6028/6002009187_fc44c55358_b.jpg" />
+    <category term="trip" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="light" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="art" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="church" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="beauty" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="nikon" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="catholic" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="christ" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="god" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="jesus" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="places" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="priest" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="belarus" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="pavalhadzinski" scheme="http://www.flickr.com/photos/tags/" />
+    <georss:point>54.592356 25.883102</georss:point>
+    <geo:lat>54.592356</geo:lat>
+    <geo:long>25.883102</geo:long>
+    <woe:woeid>55848083</woe:woeid>
+  </entry>
+
+  <entry>
+    <title>Totem</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/30350391@N07/5999769504/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/5999769504</id>
+    <published>2011-08-01T21:47:01Z</published>
+    <updated>2011-08-01T21:47:01Z</updated>
+    <dc:date.Taken>2011-07-24T16:03:17-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/30350391@N07/&quot;&gt;Maxime_R&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/30350391@N07/5999769504/&quot; title=&quot;Totem&quot;&gt;&lt;img src=&quot;http://farm7.static.flickr.com/6146/5999769504_0ed7237e81_m.jpg&quot; width=&quot;159&quot; height=&quot;240&quot; alt=&quot;Totem&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+    <author>
+      <name>Maxime_R</name>
+      <uri>http://www.flickr.com/people/30350391@N07/</uri>
+      <flickr:nsid>30350391@N07</flickr:nsid>
+    </author>
+    <link rel="enclosure" type="image/jpeg" href="http://farm7.static.flickr.com/6146/5999769504_0ed7237e81_b.jpg" />
+    <georss:point>45.180584 5.667915</georss:point>
+    <geo:lat>45.180584</geo:lat>
+    <geo:long>5.667915</geo:long>
+    <woe:woeid>622089</woe:woeid>
+  </entry>
+
+  <entry>
+    <title>Ardalanish</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/irenicrhonda/5765324767/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/5765324767</id>
+    <published>2011-05-27T18:34:16Z</published>
+    <updated>2011-05-27T18:34:16Z</updated>
+    <dc:date.Taken>2011-05-20T16:42:06-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/irenicrhonda/&quot;&gt;IrenicRhonda&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/irenicrhonda/5765324767/&quot; title=&quot;Ardalanish&quot;&gt;&lt;img src=&quot;http://farm3.static.flickr.com/2676/5765324767_3fc2c3db95_m.jpg&quot; width=&quot;240&quot; height=&quot;135&quot; alt=&quot;Ardalanish&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.robogeo.com/Flickr2Map/?type=map&amp;amp;view=satellite&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;See in Google Maps where this photo was taken&lt;/a&gt;&lt;br /&gt;
+&lt;u&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/u&gt;&lt;/p&gt;</content>
+    <author>
+      <name>IrenicRhonda</name>
+      <uri>http://www.flickr.com/people/irenicrhonda/</uri>
+      <flickr:nsid>37493306@N00</flickr:nsid>
+    </author>
+    <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.en" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm3.static.flickr.com/2676/5765324767_3fc2c3db95_b.jpg" />
+    <category term="public" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="geotagged" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="scotland" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="innerhebrides" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="unitedkingdom" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="farm" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="may" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="isleofmull" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="iona" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="weaver" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="weavers" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="mull" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="hebrides" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="gbr" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="ardalanish" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="2011" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="muile" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="obansouthandtheislesward" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="ìchaluimchille" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="20may2011" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="geo:lat=5629332367" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="geo:lon=624804497" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="ardalanishfarm" scheme="http://www.flickr.com/photos/tags/" />
+    <georss:point>56.293324 -6.248045</georss:point>
+    <geo:lat>56.293324</geo:lat>
+    <geo:long>-6.248045</geo:long>
+    <woe:woeid>20090728</woe:woeid>
+  </entry>
+
+  <entry>
+    <title>Loch Eil</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/irenicrhonda/5933448354/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/5933448354</id>
+    <published>2011-07-08T11:19:52Z</published>
+    <updated>2011-07-08T11:19:52Z</updated>
+    <dc:date.Taken>2011-07-08T12:19:52-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/irenicrhonda/&quot;&gt;IrenicRhonda&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/irenicrhonda/5933448354/&quot; title=&quot;Loch Eil&quot;&gt;&lt;img src=&quot;http://farm7.static.flickr.com/6029/5933448354_79c1ac0a39_m.jpg&quot; width=&quot;240&quot; height=&quot;148&quot; alt=&quot;Loch Eil&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;(Scottish Gaelic) Loch Iall is a sea loch in Lochaber, Scotland that opens into Loch Linnhe near the town of Fort William.&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://fiveprime.org/blackmagic/m&quot; rel=&quot;nofollow&quot;&gt;View on black&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://www.robogeo.com/Flickr2Map/?type=map&amp;amp;view=satellite&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;See in Google Maps where this photo was taken&lt;/a&gt;&lt;br /&gt;
+&lt;u&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/u&gt;&lt;/p&gt;</content>
+    <author>
+      <name>IrenicRhonda</name>
+      <uri>http://www.flickr.com/people/irenicrhonda/</uri>
+      <flickr:nsid>37493306@N00</flickr:nsid>
+    </author>
+    <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.en" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm7.static.flickr.com/6029/5933448354_79c1ac0a39_b.jpg" />
+    <category term="public" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="geotagged" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="scotland" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="highlands" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="unitedkingdom" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="july" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="gbr" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="2011" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="garvan" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="kinlocheil" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="pregamesweepwinner" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="8july2011" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="geo:lat=5684635500" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="geo:lon=531299000" scheme="http://www.flickr.com/photos/tags/" />
+    <georss:point>56.846355 -5.312989</georss:point>
+    <geo:lat>56.846355</geo:lat>
+    <geo:long>-5.312989</geo:long>
+    <woe:woeid>25263</woe:woeid>
+  </entry>
+
+  <entry>
+    <title>Redhill maize DSC_0010</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/lestiverton/6006876250/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/6006876250</id>
+    <published>2011-08-03T22:27:57Z</published>
+    <updated>2011-08-03T22:27:57Z</updated>
+    <dc:date.Taken>2011-08-03T20:37:24-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/lestiverton/&quot;&gt;Leslie Platt&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/lestiverton/6006876250/&quot; title=&quot;Redhill maize DSC_0010&quot;&gt;&lt;img src=&quot;http://farm7.static.flickr.com/6128/6006876250_9f78f38a17_m.jpg&quot; width=&quot;240&quot; height=&quot;157&quot; alt=&quot;Redhill maize DSC_0010&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+    <author>
+      <name>Leslie Platt</name>
+      <uri>http://www.flickr.com/people/lestiverton/</uri>
+      <flickr:nsid>10691940@N08</flickr:nsid>
+    </author>
+    <link rel="enclosure" type="image/jpeg" href="http://farm7.static.flickr.com/6128/6006876250_9f78f38a17_b.jpg" />
+    <category term="cheshire" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="cropped" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="nightsky" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="straightened" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="tarporley" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="exposureadjusted" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="cheshirewestchester" scheme="http://www.flickr.com/photos/tags/" />
+    <georss:point>53.152017 -2.678344</georss:point>
+    <geo:lat>53.152017</geo:lat>
+    <geo:long>-2.678344</geo:long>
+    <woe:woeid>36986</woe:woeid>
+  </entry>
+
+  <entry>
+    <title>Cadenas d'amour</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/diwan/6008041362/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/6008041362</id>
+    <published>2011-08-04T07:17:35Z</published>
+    <updated>2011-08-04T07:17:35Z</updated>
+    <dc:date.Taken>2011-07-28T14:34:14-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/diwan/&quot;&gt;diwan&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/diwan/6008041362/&quot; title=&quot;Cadenas d'amour&quot;&gt;&lt;img src=&quot;http://farm7.static.flickr.com/6148/6008041362_a68e1f0efd_m.jpg&quot; width=&quot;240&quot; height=&quot;160&quot; alt=&quot;Cadenas d'amour&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Pont du Arts&lt;br /&gt;
+Paris / France&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://loc.alize.us/#/flickr:6008041362&quot; rel=&quot;nofollow&quot;&gt;See where this picture was taken.&lt;/a&gt; &lt;a href=&quot;http://www.flickr.com/groups/geotagging/discuss/72157594165549916/&quot;&gt;[?]&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>diwan</name>
+      <uri>http://www.flickr.com/people/diwan/</uri>
+      <flickr:nsid>81504125@N00</flickr:nsid>
+    </author>
+    <link rel="enclosure" type="image/jpeg" href="http://farm7.static.flickr.com/6148/6008041362_a68e1f0efd_b.jpg" />
+    <category term="city" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="bridge" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="paris" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="france" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="seine" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="canon" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="fence" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="river" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="geotagged" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="eos" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="frankreich" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="place" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="louvre" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="zaun" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="brass" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="padlock" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="messing" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="2011" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="pontduarts" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="stadtbezirk" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="1arrondissement" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="vorhängeschlösser" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="liebesschlösser" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="canoneos450d" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="geo:lat=48858405" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="cadenasdamour" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="geo:lon=2337587" scheme="http://www.flickr.com/photos/tags/" />
+    <georss:point>48.858405 2.337587</georss:point>
+    <geo:lat>48.858405</geo:lat>
+    <geo:long>2.337587</geo:long>
+    <woe:woeid>55843752</woe:woeid>
+  </entry>
+
+  <entry>
+    <title>One tree</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/timboss81/6004412931/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/6004412931</id>
+    <published>2011-08-03T09:22:56Z</published>
+    <updated>2011-08-03T09:22:56Z</updated>
+    <dc:date.Taken>2011-08-03T18:24:57-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/timboss81/&quot;&gt;timboss81&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/timboss81/6004412931/&quot; title=&quot;One tree&quot;&gt;&lt;img src=&quot;http://farm7.static.flickr.com/6025/6004412931_d0eef71e3c_m.jpg&quot; width=&quot;240&quot; height=&quot;168&quot; alt=&quot;One tree&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</content>
+    <author>
+      <name>timboss81</name>
+      <uri>http://www.flickr.com/people/timboss81/</uri>
+      <flickr:nsid>37342835@N04</flickr:nsid>
+    </author>
+    <link rel="enclosure" type="image/jpeg" href="http://farm7.static.flickr.com/6025/6004412931_d0eef71e3c_b.jpg" />
+    <category term="sea" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="newzealand" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="sky" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="blackandwhite" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="bw" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="white" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="black" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="tree" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="art" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="clouds" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="canon" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="landscape" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="one" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="rocks" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="nz" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="british" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="welsh" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="svenska" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="matauribay" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="onetree" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="550d" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="canon550d" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="timboss81" scheme="http://www.flickr.com/photos/tags/" />
+    <georss:point>-35.029152 173.91323</georss:point>
+    <geo:lat>-35.029152</geo:lat>
+    <geo:long>173.91323</geo:long>
+    <woe:woeid>2349475</woe:woeid>
+  </entry>
+
+  <entry>
+    <title>Pasaron de la Vera HDR 4</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/cotallo-nonocot/3968165520/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/3968165520</id>
+    <published>2009-09-30T03:43:26Z</published>
+    <updated>2009-09-30T03:43:26Z</updated>
+    <dc:date.Taken>2009-09-30T05:43:26-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/cotallo-nonocot/&quot;&gt;cotallo-nonocot&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/cotallo-nonocot/3968165520/&quot; title=&quot;Pasaron de la Vera HDR 4&quot;&gt;&lt;img src=&quot;http://farm3.static.flickr.com/2643/3968165520_c1d3472e72_m.jpg&quot; width=&quot;240&quot; height=&quot;160&quot; alt=&quot;Pasaron de la Vera HDR 4&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://maps.google.es/maps/ms?gl=es&amp;amp;hl=es&amp;amp;ie=UTF8&amp;amp;msa=0&amp;amp;msid=109111079184700244089.0004689a800448a3fe6c8&amp;amp;z=14&quot; rel=&quot;nofollow&quot;&gt;maps.google.es/maps/ms?gl=es&amp;amp;hl=es&amp;amp;ie=UTF8&amp;amp;ms...&lt;/a&gt;&lt;/p&gt;</content>
+    <author>
+      <name>cotallo-nonocot</name>
+      <uri>http://www.flickr.com/people/cotallo-nonocot/</uri>
+      <flickr:nsid>8342753@N03</flickr:nsid>
+    </author>
+    <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nd/2.0/deed.en" />
+    <link rel="enclosure" type="image/jpeg" href="http://farm3.static.flickr.com/2643/3968165520_c1d3472e72_z.jpg?zz=1" />
+    <category term="lavera" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="pasarondelavera" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="cotallo" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="nonocot" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="ayuntamientodepasarondelavera" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="pasaronhdr" scheme="http://www.flickr.com/photos/tags/" />
+    <georss:point>40.051541 -5.820361</georss:point>
+    <geo:lat>40.051541</geo:lat>
+    <geo:long>-5.820361</geo:long>
+    <woe:woeid>769563</woe:woeid>
+  </entry>
+
+  <entry>
+    <title>Take it easy</title>
+    <link rel="alternate" type="text/html" href="http://www.flickr.com/photos/kenchie/6004674693/in/pool-94823070@N00"/>
+    <id>tag:flickr.com,2005:/grouppool/94823070@N00/photo/6004674693</id>
+    <published>2011-08-03T12:02:42Z</published>
+    <updated>2011-08-03T12:02:42Z</updated>
+    <dc:date.Taken>2011-07-31T16:46:09-08:00</dc:date.Taken>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/kenchie/&quot;&gt;k e n c h i e&lt;/a&gt; has added a photo to the pool:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/kenchie/6004674693/&quot; title=&quot;Take it easy&quot;&gt;&lt;img src=&quot;http://farm7.static.flickr.com/6146/6004674693_8799157226_m.jpg&quot; width=&quot;240&quot; height=&quot;160&quot; alt=&quot;Take it easy&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Hackney WickED Arts festival&lt;/p&gt;</content>
+    <author>
+      <name>k e n c h i e</name>
+      <uri>http://www.flickr.com/people/kenchie/</uri>
+      <flickr:nsid>16257414@N00</flickr:nsid>
+    </author>
+    <link rel="enclosure" type="image/jpeg" href="http://farm7.static.flickr.com/6146/6004674693_8799157226_b.jpg" />
+    <category term="two" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="bw" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="sun" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="white" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="black" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="men" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="london" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="monochrome" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="festival" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="wall" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="sitting" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="pavement" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="bricks" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="arts" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="wicked" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="sep" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="28" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="hackney" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="nikkor" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="londonist" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="2470" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="silverefexpro" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="kenchie" scheme="http://www.flickr.com/photos/tags/" />
+    <category term="silverefexpro2" scheme="http://www.flickr.com/photos/tags/" />
+    <georss:point>51.539394 -0.021637</georss:point>
+    <geo:lat>51.539394</geo:lat>
+    <geo:long>-0.021637</geo:long>
+    <woe:woeid>20089380</woe:woeid>
+  </entry>
+
+
+</feed>

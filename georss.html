@@ -22,13 +22,23 @@
                     {layers: 'basic'} );
             map.addLayer(layer);
             map.setCenter(new OpenLayers.LonLat(0, 0), 2);
-            timeline = new OpenLayers.Timeline(map, "#timeline", "when",
-                                               OpenLayers.Format.GeoJSONTimeline);
+            var ts_funct = function(d) {
+                return ((new Date(d)).getTime() / 1000);
+            }
+            timeline = new OpenLayers.Timeline({map: map,
+                                                timeline: "#timeline",
+                                                date_key: "published",
+                                                date_funct: ts_funct,
+                                                format: OpenLayers.Format.GeoRSSTimeline});
 
-            var url = "http://toolserver.org/~sonet/api_geojson.php?article=OpenLayers&callback=?";
-            $.getJSON(url, function(data) {
-                $("#status").text("Data loaded");
-                timeline.initTimeline(data);
+            $.ajax({
+                type: "GET",
+                url: "flickr.xml",
+                dataType: "xml",
+                success: function(data) {
+                    $("#status").text("Data loaded");
+                    timeline.initTimeline(data);
+                }
             });
         }
 

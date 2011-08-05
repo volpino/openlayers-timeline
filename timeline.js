@@ -7,6 +7,93 @@
  * the Free Software Foundation version 3 of the License.
  */
 
+/**
+ * Class: OpenLayers.Format.GeoRSSTimeline
+ * This class represents a GeoRSS format with time support
+ */
+OpenLayers.Format.GeoRSSTimeline = OpenLayers.Class(OpenLayers.Format.GeoRSS, {
+    past_seconds: 0,
+    when: "when",
+    first: undefined,
+    lowerlimit: undefined,
+    timestamp_funct: undefined,
+
+    createFeatureFromItem: function(item) {
+        var geometry = this.createGeometryFromItem(item);
+        var date = this.getChildValue(item, "*", this.when);
+        if (date) {
+            if (this.timestamp_funct) {
+                date = this.timestamp_funct(date);
+            }
+            console.log(date);
+            if (!this.first || this.first > date) {
+                this.first = date;
+            }
+            if (date > this.past_seconds) {
+                return;
+            }
+            if (this.lowerlimit && date < this.lowerlimit) {
+                return;
+            }
+        }
+
+        /* Provide defaults for title and description */
+        var title = this.getChildValue(item, "*", "title", this.featureTitle);
+
+        /* First try RSS descriptions, then Atom summaries */
+        var description = this.getChildValue(
+            item, "*", "description",
+            this.getChildValue(item, "*", "content",
+                this.getChildValue(item, "*", "summary", this.featureDescription)));
+
+        /* If no link URL is found in the first child node, try the
+           href attribute */
+        var link = this.getChildValue(item, "*", "link");
+        if(!link) {
+            try {
+                link = this.getElementsByTagNameNS(item, "*", "link")[0].getAttribute("href");
+            } catch(e) {
+                link = null;
+            }
+        }
+
+        var id = this.getChildValue(item, "*", "id", null);
+
+        var data = {
+            "title": title,
+            "description": description,
+            "link": link
+        };
+        var feature = new OpenLayers.Feature.Vector(geometry, data);
+        feature.fid = id;
+        return feature;
+
+    },
+
+    read: function(doc) {
+        if (typeof doc == "string") {
+            doc = OpenLayers.Format.XML.prototype.read.apply(this, [doc]);
+        }
+
+        /* Try RSS items first, then Atom entries */
+        var itemlist = null;
+        itemlist = this.getElementsByTagNameNS(doc, '*', 'item');
+        if (itemlist.length == 0) {
+            itemlist = this.getElementsByTagNameNS(doc, '*', 'entry');
+        }
+
+        var numItems = itemlist.length;
+        var features = [];
+        for(var i=0; i<numItems; i++) {
+            var r = this.createFeatureFromItem(itemlist[i]);
+            if (r) {
+                features.push(r);
+            }
+        }
+        return features;
+    },
+    CLASS_NAME: "OpenLayers.Format.GeoRSSTimeline"
+});
 
 /**
  * Class: OpenLayers.Format.GeoJSONTimeline
@@ -17,6 +104,7 @@ OpenLayers.Format.GeoJSONTimeline = OpenLayers.Class(OpenLayers.Format.GeoJSON, 
     when: "when",
     first: undefined,
     lowerlimit: undefined,
+    timestamp_funct: undefined,
 
     read: function(json, type, filter) {
         type = (type) ? type : "FeatureCollection";
@@ -96,10 +184,13 @@ OpenLayers.Format.GeoJSONTimeline = OpenLayers.Class(OpenLayers.Format.GeoJSON, 
         var feature, geometry, attributes, bbox, when;
         attributes = (obj.properties) ? obj.properties : {};
         when = attributes[this.when];
-        if (!this.first) {
-            this.first = when;
+        if (this.timestamp_funct) {
+            when = this.timestamp_funct(when);
         }
         if (when) {
+            if (!this.first || this.first > when) {
+                this.first = when;
+            }
             if (when > this.past_seconds) {
                 return;
             }
@@ -134,7 +225,6 @@ OpenLayers.Format.GeoJSONTimeline = OpenLayers.Class(OpenLayers.Format.GeoJSON, 
 OpenLayers.Timeline = OpenLayers.Class({
     map: undefined,
     slider: undefined,
-    past_seconds: 0,
     current_date: new Date().getTime() / 1000,
     display_layer: undefined,
     current_data: undefined,
@@ -149,17 +239,20 @@ OpenLayers.Timeline = OpenLayers.Class({
     timedelta: 15552000,  // 6 months
     first: undefined,
 
-    initialize: function(map, slider, when) {
-        this.map = map;
-        this.slider = slider;
-        if (!when) {
-            when = "when";
-        }
+    initialize: function(options) {
+        this.map = options.map;
+        this.slider = options.timeline;
         this.curr_speed = parseInt(this.speeds.length / 2);
-        this.data_format = new OpenLayers.Format.GeoJSONTimeline();
-        this.data_format.when = when;
+        this.data_format = new options.format();
+        if (options.date_key) {
+            this.data_format.when = options.date_key;
+        }
+        this.data_format.timestamp_funct = options.date_funct;
         var self = this;
         $(this.slider).slider({
+            range: "min",
+            min: 0,
+            max: 100,
             value: 0,
             disabled: true,
             change: function (e, ui) {
@@ -190,6 +283,17 @@ OpenLayers.Timeline = OpenLayers.Class({
                     self.data_format.past_seconds =
                       Math.ceil(self.first+(self.current_date-self.first)*(ui.value / 100.0));
                 }
+
+                var d = new Date(self.data_format.past_seconds*1000);
+                d = d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear();
+                var tooltip = $("<div/>")
+                          .css({ position: 'absolute', top: "20px", left: "0px"})
+                          .addClass("slider-tooltip")
+                          .text(d);
+                $(self.slider).slider()
+                    .find(".ui-slider-handle")
+                    .append(tooltip);
+                setTimeout(function() { tooltip.remove(); }, 500);
             }
         });
     },
@@ -246,6 +350,10 @@ OpenLayers.Timeline = OpenLayers.Class({
         return l;
     },
 
+    update: function() {
+        $(this.slider).slider("value", $(this.slider).slider("value"));
+    },
+
     onPopupClose: function(evt) {
        this.selectControl.unselect(this.selectedFeature);
     },
@@ -255,7 +363,7 @@ OpenLayers.Timeline = OpenLayers.Class({
             this.selectedFeature = feature;
             var desc = "";
             if (feature.cluster.length > 1) {
-                desc += "<strong>" + feature.cluster.length + " edits from this area</strong><br/>";
+                desc += "<strong>" + feature.cluster.length + " features in this area</strong><br/>";
             }
             if (feature.cluster.length > 1) {
                 desc += "<br/><em>tip: increase the zoom level</em>";
