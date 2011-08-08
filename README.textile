@@ -26,10 +26,10 @@ h3. Basic Usage
 @<script src="timeline.js" type="text/javascript"></script>@
 
 * create a OpenLayers Timeline object
-@timeline = new OpenLayers.Timeline({map: map,@
-@                                    timeline: "#timeline",@
-@                                    date_key: "when",@
-@                                    format: OpenLayers.Format.GeoJSONTimeline});@
+@timeline = new OpenLayers.Timeline({map: map,
+                                    timeline: "#timeline",
+                                    date_key: "when",
+                                    format: OpenLayers.Format.GeoJSONTimeline});@
 
 * initialize Timeline and enjoy!
 @timeline.initTimeline(data);@
