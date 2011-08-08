@@ -25,9 +25,9 @@ h3. Basic Usage
 
 * create a OpenLayers Timeline object
 @timeline = new OpenLayers.Timeline({map: map,
-@                                    timeline: "#timeline",
-@                                    date_key: "when",
-@                                    format: OpenLayers.Format.GeoJSONTimeline});
+                                    timeline: "#timeline",
+                                    date_key: "when",
+                                    format: OpenLayers.Format.GeoJSONTimeline});@
 
 * initialize Timeline and enjoy!
 @timeline.initTimeline(data);
