@@ -4,7 +4,7 @@ OpenLayers Timeline is a simple library to create a time related map with OpenLa
 It supports cluster strategy (OpenLayers.Strategy.Cluster) and time filtering.
 Currently it supports source data in GeoJSON or GeoRSS format.
 
-See a demo at http://volpino.github.com/openlayers-timeline/
+See a "demo":http://volpino.github.com/openlayers-timeline/
 
 
 h3. Deps
