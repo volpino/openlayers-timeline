@@ -1,7 +1,8 @@
 h2. OpenLayers Timeline
 
 OpenLayers Timeline is a simple library to create a time related map with OpenLayers.
-Currently it supports source data from GeoJSON or GeoRSS.
+It supports cluster strategy (OpenLayers.Strategy.Cluster) and time filtering.
+Currently it supports source data in GeoJSON or GeoRSS format.
 
 See a demo at http://volpino.github.com/openlayers-timeline/
 
@@ -14,14 +15,74 @@ h3. Deps
 
 h3. Basic Usage
 
-* Include dependancies
+* Setup a basic page with an OpenLayers Map (see demos for examples)
+
+* Include the plugin for the format that you're going to use
+@<script src="lib/OpenLayers.Format.GeoJSONTimeline.js" type="text/javascript"></script>
+
+* Include timeline.js
+@<script src="timeline.js" type="text/javascript"></script>
+
 * create a OpenLayers Timeline object
+@timeline = new OpenLayers.Timeline({map: map,
+@                                    timeline: "#timeline",
+@                                    date_key: "when",
+@                                    format: OpenLayers.Format.GeoJSONTimeline});
+
 * initialize Timeline and enjoy!
+@timeline.initTimeline(data);
 
 
 h3. API Documentation
 
-Write me!
+OpenLayers Timeline offers new data formats that can be used in OpenLayers without OpenLayers Timeline.
+They add time support to existing data formats.
+* OpenLayers.Format.GeoJSONTimeline: subclass of OpenLayers.Format.GeoJSON.
+* OpenLayers.Format.GeoRSSTimeline: subclass of OpenLayers.Format.GeoRSS.
+
+* OpenLayers.Timeline
+** constructor options:
+*** map: OpenLayers.Map object
+*** timeline: id for the slider container
+*** date_key: name of the field that contains a date value for the item (can be an XML tag name or a JSON field name)
+*** date_funct: function to convert date value to UNIX timestamp (number of seconds from 1970/01/01). Optional
+*** format: data format to use (e.g.: OpenLayers.Format.GeoJSONTimeline).
+** methods:
+*** initTimeline(data): initializes the timeline with data. data must be in the format specified in the constructor.
+*** animateBar(): starts timeline animation
+*** stopBar(): stops timeline animation
+*** togglePlay(): play/pause animation
+*** fasterAnimation(): make animation faster
+*** slowerAnimation(): make animation slower
+*** getBarValue(): get timeline value (0-100)
+*** setBarValue(): set timeline value (0-100)
+*** getCurrentTime(): get UNIX timestamp of displayed data
+*** getCurrentSpeed(): get a string with the current animation speed
+*** update(): refreshes displayed data
+** properties:
+*** cumulative: display data in cumulative or instantaneous view (Boolean)
+*** speeds: strings with speeds strings (Strings array)
+*** timedelta: delta (in seconds) for non cumulative view (default: 6 months) (Integer)
+
+
+h3. Customizations
+
+You can easily customize this plugin to fit your needs. Here's some examples:
+
+* Make visualization non cumulative:
+@timeline.cumulative = false;
+
+* Customize speeds names:
+@timeline.speeds = ["Slow", "Normal", "Fast"];
+
+* Change time slice for non cumulative view:
+@timeline.timedelta = 86400 // 1 day
+
+* Change map style:
+@timeline.defaultStyle = new OpenLayers.Style({...})
+
+* redefine popup on feature clicking (see original function for an example):
+@timeline.onFeatureSelect = function() {...}
 
 
 h3. Contribute!

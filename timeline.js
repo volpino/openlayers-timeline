@@ -225,6 +225,10 @@ OpenLayers.Timeline = OpenLayers.Class({
         return this.speeds[this.curr_speed];
     },
 
+    getCurrentSpeedValue: function(value) {
+        return this.curr_speed;
+    },
+
     stopBar: function() {
         if (this.timerId) {
             clearInterval(this.timerId);
