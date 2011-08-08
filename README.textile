@@ -18,19 +18,21 @@ h3. Basic Usage
 * Setup a basic page with an OpenLayers Map (see demos for examples)
 
 * Include the plugin for the format that you're going to use
-@<script src="lib/OpenLayers.Format.GeoJSONTimeline.js" type="text/javascript"></script>
+@<script src="lib/OpenLayers.Format.GeoJSONTimeline.js" type="text/javascript"></script>@
+
+* Include jQuery and jQuery-UI
 
 * Include timeline.js
-@<script src="timeline.js" type="text/javascript"></script>
+@<script src="timeline.js" type="text/javascript"></script>@
 
 * create a OpenLayers Timeline object
-@timeline = new OpenLayers.Timeline({map: map,
-                                    timeline: "#timeline",
-                                    date_key: "when",
-                                    format: OpenLayers.Format.GeoJSONTimeline});@
+@timeline = new OpenLayers.Timeline({map: map,@
+@                                    timeline: "#timeline",@
+@                                    date_key: "when",@
+@                                    format: OpenLayers.Format.GeoJSONTimeline});@
 
 * initialize Timeline and enjoy!
-@timeline.initTimeline(data);
+@timeline.initTimeline(data);@
 
 
 h3. API Documentation
@@ -70,19 +72,19 @@ h3. Customizations
 You can easily customize this plugin to fit your needs. Here's some examples:
 
 * Make visualization non cumulative:
-@timeline.cumulative = false;
+@timeline.cumulative = false;@
 
 * Customize speeds names:
-@timeline.speeds = ["Slow", "Normal", "Fast"];
+@timeline.speeds = ["Slow", "Normal", "Fast"];@
 
 * Change time slice for non cumulative view:
-@timeline.timedelta = 86400 // 1 day
+@timeline.timedelta = 86400  //one day@
 
 * Change map style:
-@timeline.defaultStyle = new OpenLayers.Style({...})
+@timeline.defaultStyle = new OpenLayers.Style({...})@
 
 * redefine popup on feature clicking (see original function for an example):
-@timeline.onFeatureSelect = function() {...}
+@timeline.onFeatureSelect = function() {...}@
 
 
 h3. Contribute!
