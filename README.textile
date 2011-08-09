@@ -7,12 +7,10 @@ Currently it supports source data in GeoJSON or GeoRSS format.
 See a "demo":http://volpino.github.com/openlayers-timeline/
 
 
-.h3 Why another timeline for OpenLayers?
+h3. Why another timeline for OpenLayers?
 
-I know that there are other timelines for OpenLayers like "maptimeline":http://code.google.com/p/maptimeline/
-or "timemap":http://code.google.com/p/timemap/ but none of these was what i needed for "WikiTrip":http://sonetlab.fbk.eu/wikitrip/
-They are both based on Simile Timeline, which is really cool, but they don't support cluster strategy
-and they are extremely slow with huge amount of data (>1000 points).
+I know that there are other timelines for OpenLayers like "maptimeline":http://code.google.com/p/maptimeline/ or "timemap":http://code.google.com/p/timemap/ but none of these was what i needed for "WikiTrip":http://sonetlab.fbk.eu/wikitrip/
+They are both based on Simile Timeline, which is really cool, but they don't support cluster strategy and they are extremely slow with huge amount of data (>1000 points).
 OpenLayers-Timeline supports huge datasets (tested with 15000 points) and cluster strategy for displaying data which is really cool and insightful.
 Moreover it offers a collection of standard data formats for OpenLayers with time context support.
 
