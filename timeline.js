@@ -31,7 +31,7 @@ OpenLayers.Timeline = OpenLayers.Class({
 
     initialize: function(options) {
         this.map = options.map;
-		    this.display_layer = this.createDisplayLayer(),
+        this.display_layer = this.createDisplayLayer(),
         this.map.addLayer(this.display_layer);
         this.createSelectControl();
         this.slider = options.timeline;
@@ -42,7 +42,7 @@ OpenLayers.Timeline = OpenLayers.Class({
             this.data_format.date_key = options.date_key;
         }
         this.data_format.timestamp_funct = options.date_funct;
-		    this.onFeatureInsert = options.onFeatureInsert;
+        this.onFeatureInsert = options.onFeatureInsert;
 
         var self = this;
         $(this.slider).slider({
@@ -53,7 +53,7 @@ OpenLayers.Timeline = OpenLayers.Class({
             disabled: true,
             change: function (e, ui) {
                 if (self.display_layer) {
-                    
+
                     if (self.selectControl) {
 						var i;
 						for( i in self.map.popups ){
@@ -81,6 +81,7 @@ OpenLayers.Timeline = OpenLayers.Class({
 
                     self.createSelectControl();
                 }
+
                 var bounds = self.display_layer.getDataExtent();
                 if (bounds && self.cumulative) {
                     self.map.zoomToExtent( bounds, false);
@@ -231,12 +232,12 @@ OpenLayers.Timeline = OpenLayers.Class({
 		    this.data_format.past_seconds = 0;
         this.data_format.first = undefined;
         this.data_format.lowerlimit = undefined;
-        this.data_format.current_date = undefined;
-				this.selectControl.deactivate();
+        this.data_format.current_date = new Date().getTime() / 1000;
+        this.selectControl.deactivate();
         this.map.removeControl(self.selectControl);
         this.update();
         var past_seconds = this.data_format.past_seconds;
-				var firstdate = this.first;
+        var firstdate = this.first;
         if (firstdate) {
 			     $(this.slider).slider({disabled: false});
 			     if (past_seconds - firstdate > 0) {
