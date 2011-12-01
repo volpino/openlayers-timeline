@@ -36,8 +36,12 @@ OpenLayers.Timeline = OpenLayers.Class({
         this.createSelectControl();
         this.slider = options.timeline;
         this.curr_speed = parseInt(this.speeds.length / 2);
-        this.data_format = new options.format();
-//        this.data_format = options.format;
+//        if( options.formatOptions ){
+          this.data_format = new options.format( options.formatOptions );
+//        }
+//        else{
+//           this.data_format = new options.format();
+//        }  
         if (options.date_key) {
             this.data_format.date_key = options.date_key;
         }
