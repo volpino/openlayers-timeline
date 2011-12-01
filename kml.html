@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.13.custom.css" type="text/css" />
+    <link rel="stylesheet" href="http://openlayers.org/dev/theme/default/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="lib/jquery-1.4.4.min.js" type="text/javascript"></script>
+    <script src="lib/jquery-ui-1.8.14.custom.min.js" type="text/javascript"></script>
+    <script src="http://openlayers.org/api/OpenLayers.js" type="text/javascript"></script>
+    <script src="lib/kml.js" type="text/javascript"></script>
+    <script src="timeline.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        var map, timeline;
+
+        function init(){
+            map = new OpenLayers.Map('map');
+            layer = new OpenLayers.Layer.WMS("OpenLayers WMS",
+                    "http://vmap0.tiles.osgeo.org/wms/vmap0",
+                    {layers: 'basic'}, {numZoomLevels: 5});
+            map.addLayer(layer);
+            map.setCenter(new OpenLayers.LonLat(0, 0), 2);
+            var ts_funct = function(d) {
+                return ((new Date(d)).getTime() / 1000);
+            }
+            timeline = new OpenLayers.Timeline({map: map,
+                                                timeline: "#timeline",
+                                                date_key: "published",
+                                                date_funct: ts_funct,
+                                                format: OpenLayers.Format.KML});
+
+            $.ajax({
+                type: "GET",
+                url: "nzemperor.kml",
+                dataType: "kml",
+                success: function(data) {
+                    $("#status").text("Data loaded");
+                    timeline.initTimeline(data);
+                }
+            });
+        }
+
+        function toggleCumulative() {
+            if ($("#cumulative").attr("checked")) {
+                timeline.cumulative = true;
+            }
+            else {
+                timeline.cumulative = false;
+            }
+            timeline.update();
+        }
+
+        $(document).ready(function() {
+            init();
+            timeline.cumulative = true;
+            $("#cumulative").attr("checked", "checked");
+        });
+    </script>
+  </head>
+  <body>
+    <h1 id="title">OpenLayers Timeline GeoRSS Demo</h1>
+    <div id="container">
+      <p>You're are seeing the timeline of <a href="nzemperor.kml">nzemperor.com</a> by <a href="http://www.sirtrack.com">Sirtrack</a></p>
+      <p id="status">Loading...</p>
+      <div id="controls">
+        <input type="button" onclick="timeline.togglePlay();" value="Play/Pause" />
+        <input type="button" onclick="timeline.fasterAnimation();" value="Faster" />
+        <input type="button" onclick="timeline.slowerAnimation();" value="Slower" />
+        <label for="cumulative">Cumulative</label>
+        <input id="cumulative" type="checkbox" onChange="toggleCumulative();" />
+      </div>
+      <div id="timeline"></div>
+      <div id="map" class="smallmap"></div>
+    </div>
+  </body>
+</html>
+

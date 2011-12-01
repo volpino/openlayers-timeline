@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
+    <Document>
+        <Style id="nzemperor">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../favicon.ico</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-normal-start">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/yellow-start.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-normal-end">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/yellow-end.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-normal-data">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/yellow-dot.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-high-start">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/red-start.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-high-end">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/red-end.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-high-data">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/red-dot.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-argos3-start">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/dk-blue-3-start.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-argos3-end">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/dk-blue-3-end.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-argos3-data">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/dk-blue-3-dot.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-argos2-start">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/dk-blue-2-start.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-argos2-end">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/dk-blue-2-end.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-argos2-data">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/dk-blue-2-dot.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-argos1-start">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/dk-blue-1-start.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-argos1-end">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/dk-blue-1-end.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-argos1-data">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/dk-blue-1-dot.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-argos0-start">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/dk-blue-0-start.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-argos0-end">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/dk-blue-0-end.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-argos0-data">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/dk-blue-0-dot.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-argosA-start">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/lt-blue-a-start.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-argosA-end">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/lt-blue-a-end.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-argosA-data">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/lt-blue-a-dot.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-argosB-start">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/lt-blue-b-start.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-argosB-end">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/lt-blue-b-end.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="sirtrack-argosB-data">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/lt-blue-b-dot.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="dropoff">
+            <IconStyle>
+                <scale>0.5</scale>
+                <heading>0.0</heading>
+                <Icon>
+                    <href>../../static/kml/marker.png</href>
+                    <refreshInterval>0.0</refreshInterval>
+                    <viewRefreshTime>0.0</viewRefreshTime>
+                    <viewBoundScale>0.0</viewBoundScale>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="track">
+            <LineStyle>
+                <color>ffff0000</color>
+                <width>2.0</width>
+            </LineStyle>
+        </Style>
+        <ScreenOverlay>
+            <name>Sirtrack Logo</name>
+            <visibility>1</visibility>
+            <drawOrder>0</drawOrder>
+            <Icon>
+                <href>../../static/kml/SIRTRACK-logo-resized.png</href>
+                <refreshInterval>0.0</refreshInterval>
+                <viewRefreshTime>0.0</viewRefreshTime>
+                <viewBoundScale>0.0</viewBoundScale>
+            </Icon>
+            <overlayXY x="0.0" y="0.0" xunits="fraction" yunits="fraction"/>
+            <screenXY x="0.0" y="0.0" xunits="fraction" yunits="fraction"/>
+            <rotationXY x="0.0" y="0.0" xunits="fraction" yunits="fraction"/>
+            <size x="0.0" y="0.0" xunits="fraction" yunits="fraction"/>
+            <rotation>0.0</rotation>
+        </ScreenOverlay>
+        <Folder id="NZEmperor (KiwiSat 202)">
+            <name>NZEmperor (KiwiSat 202)'s Data Points</name>
+            <description>Data map of points for logger NZEmperor (KiwiSat 202) with time stamps</description>
+            <Placemark>
+                <name>2011-09-08 20:11:51 UTC, 8.2625ºC</name>
+                <TimeStamp>
+                    <when>2011-09-08T20:11:51Z</when>
+                </TimeStamp>
+                <styleUrl>#nzemperor</styleUrl>
+                <Point>
+                    <coordinates>170.718994140625,-52.32600021362305</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-08 20:11:22 UTC, 8.4986ºC</name>
+                <TimeStamp>
+                    <when>2011-09-08T20:11:22Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.72000122070312,-52.33000183105469</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-08 19:38:53 UTC, 8.2625ºC</name>
+                <TimeStamp>
+                    <when>2011-09-08T19:38:53Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.72000122070312,-52.327999114990234</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-08 18:32:59 UTC, 8.2625ºC</name>
+                <TimeStamp>
+                    <when>2011-09-08T18:32:59Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos3-data</styleUrl>
+                <Point>
+                    <coordinates>170.70399475097656,-52.31800079345703</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-08 18:27:53 UTC, 8.2625ºC</name>
+                <TimeStamp>
+                    <when>2011-09-08T18:27:53Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>170.7270050048828,-52.29899978637695</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-08 18:27:53 UTC, 8.2625ºC</name>
+                <TimeStamp>
+                    <when>2011-09-08T18:27:53Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>170.7100067138672,-52.32099914550781</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-08 18:02:35 UTC, 8.2625ºC</name>
+                <TimeStamp>
+                    <when>2011-09-08T18:02:35Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>170.6790008544922,-52.316001892089844</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-08 11:29:42 UTC, 8.2625ºC</name>
+                <TimeStamp>
+                    <when>2011-09-08T11:29:42Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>170.66200256347656,-52.31999969482422</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-08 10:26:33 UTC, 8.2625ºC</name>
+                <TimeStamp>
+                    <when>2011-09-08T10:26:33Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos3-data</styleUrl>
+                <Point>
+                    <coordinates>170.64300537109375,-52.319000244140625</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-08 10:26:10 UTC, 8.2625ºC</name>
+                <TimeStamp>
+                    <when>2011-09-08T10:26:10Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.63999938964844,-52.31800079345703</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-08 09:55:39 UTC, 8.2625ºC</name>
+                <TimeStamp>
+                    <when>2011-09-08T09:55:39Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.63800048828125,-52.31800079345703</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-08 08:44:22 UTC, 8.2625ºC</name>
+                <TimeStamp>
+                    <when>2011-09-08T08:44:22Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>170.62600708007812,-52.31999969482422</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-08 08:43:14 UTC, 8.2625ºC</name>
+                <TimeStamp>
+                    <when>2011-09-08T08:43:14Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.61900329589844,-52.31700134277344</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-08 08:42:51 UTC, 8.2625ºC</name>
+                <TimeStamp>
+                    <when>2011-09-08T08:42:51Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>170.625,-52.31700134277344</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-08 08:13:09 UTC, 8.2625ºC</name>
+                <TimeStamp>
+                    <when>2011-09-08T08:13:09Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos3-data</styleUrl>
+                <Point>
+                    <coordinates>170.61599731445312,-52.31700134277344</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-07 20:35:45 UTC, 8.9706ºC</name>
+                <TimeStamp>
+                    <when>2011-09-07T20:35:45Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.51699829101562,-52.31399917602539</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-07 20:23:42 UTC, 8.7346ºC</name>
+                <TimeStamp>
+                    <when>2011-09-07T20:23:42Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.51100158691406,-52.314998626708984</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-07 18:44:40 UTC, 8.7346ºC</name>
+                <TimeStamp>
+                    <when>2011-09-07T18:44:40Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.5030059814453,-52.3120002746582</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-07 18:24:02 UTC, 8.7346ºC</name>
+                <TimeStamp>
+                    <when>2011-09-07T18:24:02Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.5050048828125,-52.30699920654297</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-07 11:54:38 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-07T11:54:38Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>170.4429931640625,-52.31100082397461</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-07 11:04:44 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-07T11:04:44Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>170.43299865722656,-52.310001373291016</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-07 10:43:43 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-07T10:43:43Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>170.41099548339844,-52.30500030517578</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-07 10:37:21 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-07T10:37:21Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.42599487304688,-52.29899978637695</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-07 10:19:25 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-07T10:19:25Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.42799377441406,-52.297000885009766</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-07 09:06:40 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-07T09:06:40Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos3-data</styleUrl>
+                <Point>
+                    <coordinates>170.41700744628906,-52.29100036621094</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-07 08:54:53 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-07T08:54:53Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>170.39700317382812,-52.292999267578125</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-07 08:40:17 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-07T08:40:17Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.40199279785156,-52.29100036621094</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-06 20:55:13 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-06T20:55:13Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.25999450683594,-52.24800109863281</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-06 20:36:13 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-06T20:36:13Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos3-data</styleUrl>
+                <Point>
+                    <coordinates>170.26199340820312,-52.249000549316406</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-06 20:27:00 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-06T20:27:00Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos3-data</styleUrl>
+                <Point>
+                    <coordinates>170.26300048828125,-52.24700164794922</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-06 19:13:54 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-06T19:13:54Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>170.26600646972656,-52.23899841308594</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-06 18:57:38 UTC, 11.095ºC</name>
+                <TimeStamp>
+                    <when>2011-09-06T18:57:38Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.25399780273438,-52.23899841308594</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-06 18:46:19 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-06T18:46:19Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.25,-52.237998962402344</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-06 11:14:35 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-06T11:14:35Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.27000427246094,-52.141998291015625</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-06 11:07:19 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-06T11:07:19Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.2760009765625,-52.13800048828125</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-06 10:41:49 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-06T10:41:49Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>170.25,-52.138999938964844</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-06 10:39:11 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-06T10:39:11Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>170.2550048828125,-52.13600158691406</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-06 09:25:57 UTC, 9.9147ºC</name>
+                <TimeStamp>
+                    <when>2011-09-06T09:25:57Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos3-data</styleUrl>
+                <Point>
+                    <coordinates>170.25599670410156,-52.11800003051758</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-06 09:07:05 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-06T09:07:05Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.2480010986328,-52.1150016784668</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-06 09:03:17 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-06T09:03:17Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos3-data</styleUrl>
+                <Point>
+                    <coordinates>170.24200439453125,-52.1150016784668</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-05 20:47:26 UTC, 9.6787ºC</name>
+                <TimeStamp>
+                    <when>2011-09-05T20:47:26Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>169.95899963378906,-52.03900146484375</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-05 19:37:44 UTC, 9.6787ºC</name>
+                <TimeStamp>
+                    <when>2011-09-05T19:37:44Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>169.93600463867188,-52.013999938964844</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-05 19:11:02 UTC, 9.6787ºC</name>
+                <TimeStamp>
+                    <when>2011-09-05T19:11:02Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>169.92999267578125,-52.007999420166016</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-05 19:06:06 UTC, 9.6787ºC</name>
+                <TimeStamp>
+                    <when>2011-09-05T19:06:06Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos3-data</styleUrl>
+                <Point>
+                    <coordinates>169.92100524902344,-52.00600051879883</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-05 18:04:43 UTC, 9.6787ºC</name>
+                <TimeStamp>
+                    <when>2011-09-05T18:04:43Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>169.87600708007812,-51.981998443603516</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-05 11:24:52 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-05T11:24:52Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>169.875,-51.90599822998047</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-05 11:23:02 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-05T11:23:02Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>169.8769989013672,-51.902000427246094</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-05 11:06:43 UTC, 9.9147ºC</name>
+                <TimeStamp>
+                    <when>2011-09-05T11:06:43Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>169.86199951171875,-51.89799880981445</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-05 09:26:06 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-05T09:26:06Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>169.81199645996094,-51.88999938964844</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-05 09:17:37 UTC, 9.9147ºC</name>
+                <TimeStamp>
+                    <when>2011-09-05T09:17:37Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>169.7969970703125,-51.89099884033203</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-05 09:17:37 UTC, 9.9147ºC</name>
+                <TimeStamp>
+                    <when>2011-09-05T09:17:37Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>169.79800415039062,-51.89099884033203</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-05 08:11:28 UTC, 9.9147ºC</name>
+                <TimeStamp>
+                    <when>2011-09-05T08:11:28Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>169.8470001220703,-51.87200164794922</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-04 19:56:58 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-04T19:56:58Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>169.60899353027344,-51.74599838256836</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-04 19:33:54 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-04T19:33:54Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>169.5850067138672,-51.72700119018555</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-04 19:19:09 UTC, 9.9147ºC</name>
+                <TimeStamp>
+                    <when>2011-09-04T19:19:09Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>169.60899353027344,-51.731998443603516</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-04 11:47:41 UTC, 9.6787ºC</name>
+                <TimeStamp>
+                    <when>2011-09-04T11:47:41Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>169.56199645996094,-51.64799880981445</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-04 11:34:57 UTC, 9.9147ºC</name>
+                <TimeStamp>
+                    <when>2011-09-04T11:34:57Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>169.54600524902344,-51.67100143432617</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-04 10:11:12 UTC, 9.9147ºC</name>
+                <TimeStamp>
+                    <when>2011-09-04T10:11:12Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>169.51199340820312,-51.65299987792969</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-04 09:50:30 UTC, 9.9147ºC</name>
+                <TimeStamp>
+                    <when>2011-09-04T09:50:30Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>169.49899291992188,-51.65800094604492</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-04 09:31:00 UTC, 10.151ºC</name>
+                <TimeStamp>
+                    <when>2011-09-04T09:31:00Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>169.50599670410156,-51.65599822998047</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-04 08:28:28 UTC, 9.9147ºC</name>
+                <TimeStamp>
+                    <when>2011-09-04T08:28:28Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>169.45899963378906,-51.665000915527344</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-04 08:08:29 UTC, 9.6787ºC</name>
+                <TimeStamp>
+                    <when>2011-09-04T08:08:29Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>169.4320068359375,-51.67599868774414</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-03 10:29:37 UTC</name>
+                <TimeStamp>
+                    <when>2011-09-03T10:29:37Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>169.57000732421875,-50.553001403808594</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-03 10:12:27 UTC</name>
+                <TimeStamp>
+                    <when>2011-09-03T10:12:27Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>169.5399932861328,-50.50899887084961</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-03 09:44:22 UTC</name>
+                <TimeStamp>
+                    <when>2011-09-03T09:44:22Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>169.5679931640625,-50.4379997253418</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-03 08:32:55 UTC</name>
+                <TimeStamp>
+                    <when>2011-09-03T08:32:55Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos3-data</styleUrl>
+                <Point>
+                    <coordinates>169.5399932861328,-50.29600143432617</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-03 08:02:03 UTC</name>
+                <TimeStamp>
+                    <when>2011-09-03T08:02:03Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>169.5189971923828,-50.22700119018555</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-02 10:53:02 UTC</name>
+                <TimeStamp>
+                    <when>2011-09-02T10:53:02Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>169.9759979248047,-49.367000579833984</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-02 09:54:00 UTC</name>
+                <TimeStamp>
+                    <when>2011-09-02T09:54:00Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>170.04299926757812,-49.369998931884766</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-02 08:56:15 UTC</name>
+                <TimeStamp>
+                    <when>2011-09-02T08:56:15Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>170.08700561523438,-49.361000061035156</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-02 08:14:15 UTC</name>
+                <TimeStamp>
+                    <when>2011-09-02T08:14:15Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>170.10800170898438,-49.3650016784668</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-01 20:57:56 UTC</name>
+                <TimeStamp>
+                    <when>2011-09-01T20:57:56Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>170.38600158691406,-49.14799880981445</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-01 11:14:15 UTC</name>
+                <TimeStamp>
+                    <when>2011-09-01T11:14:15Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>170.73699951171875,-48.152000427246094</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-01 09:34:08 UTC</name>
+                <TimeStamp>
+                    <when>2011-09-01T09:34:08Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>170.8280029296875,-47.959999084472656</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-09-01 09:22:24 UTC</name>
+                <TimeStamp>
+                    <when>2011-09-01T09:22:24Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>170.76300048828125,-47.95600128173828</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-08-31 08:39:08 UTC</name>
+                <TimeStamp>
+                    <when>2011-08-31T08:39:08Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>172.6479949951172,-44.77399826049805</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-08-30 20:14:49 UTC</name>
+                <TimeStamp>
+                    <when>2011-08-30T20:14:49Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>173.9770050048828,-42.75699996948242</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-08-30 19:49:31 UTC</name>
+                <TimeStamp>
+                    <when>2011-08-30T19:49:31Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>173.8820037841797,-42.65700149536133</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-08-30 18:34:58 UTC</name>
+                <TimeStamp>
+                    <when>2011-08-30T18:34:58Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>174.0709991455078,-42.49300003051758</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-08-30 10:18:37 UTC</name>
+                <TimeStamp>
+                    <when>2011-08-30T10:18:37Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>174.52499389648438,-41.064998626708984</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-08-29 20:20:16 UTC</name>
+                <TimeStamp>
+                    <when>2011-08-29T20:20:16Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos3-data</styleUrl>
+                <Point>
+                    <coordinates>174.5290069580078,-41.119998931884766</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-08-29 10:35:28 UTC</name>
+                <TimeStamp>
+                    <when>2011-08-29T10:35:28Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>174.47999572753906,-41.194000244140625</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-08-29 09:00:01 UTC</name>
+                <TimeStamp>
+                    <when>2011-08-29T09:00:01Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>174.52099609375,-41.3129997253418</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-08-29 08:55:31 UTC</name>
+                <TimeStamp>
+                    <when>2011-08-29T08:55:31Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-data</styleUrl>
+                <Point>
+                    <coordinates>174.52999877929688,-41.32600021362305</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-08-29 08:50:16 UTC</name>
+                <TimeStamp>
+                    <when>2011-08-29T08:50:16Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos0-data</styleUrl>
+                <Point>
+                    <coordinates>174.3470001220703,-41.36899948120117</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-08-28 16:10:32 UTC</name>
+                <TimeStamp>
+                    <when>2011-08-28T16:10:32Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos3-data</styleUrl>
+                <Point>
+                    <coordinates>174.78399658203125,-41.31999969482422</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-08-28 14:09:47 UTC</name>
+                <TimeStamp>
+                    <when>2011-08-28T14:09:47Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos1-data</styleUrl>
+                <Point>
+                    <coordinates>174.7100067138672,-41.30400085449219</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>2011-08-28 09:14:28 UTC</name>
+                <TimeStamp>
+                    <when>2011-08-28T09:14:28Z</when>
+                </TimeStamp>
+                <styleUrl>#sirtrack-argos2-start</styleUrl>
+                <Point>
+                    <coordinates>174.78700256347656,-41.319000244140625</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>Dropoff Location</name>
+                <TimeStamp>
+                    <when>2011-09-03T22:30:00Z</when>
+                </TimeStamp>
+                <styleUrl>#dropoff</styleUrl>
+                <Point>
+                    <coordinates>169.4,-51.7</coordinates>
+                </Point>
+            </Placemark>
+        </Folder>
+        <Placemark id="NZEmperor (KiwiSat 202)_tr">
+            <name>NZEmperor (KiwiSat 202)'s Track</name>
+            <styleUrl>#track</styleUrl>
+            <LineString>
+                <coordinates>170.718994140625,-52.32600021362305 170.72000122070312,-52.33000183105469 170.72000122070312,-52.327999114990234 170.70399475097656,-52.31800079345703 170.7270050048828,-52.29899978637695 170.7100067138672,-52.32099914550781 170.6790008544922,-52.316001892089844 170.66200256347656,-52.31999969482422 170.64300537109375,-52.319000244140625 170.63999938964844,-52.31800079345703 170.63800048828125,-52.31800079345703 170.62600708007812,-52.31999969482422 170.61900329589844,-52.31700134277344 170.625,-52.31700134277344 170.61599731445312,-52.31700134277344 170.51699829101562,-52.31399917602539 170.51100158691406,-52.314998626708984 170.5030059814453,-52.3120002746582 170.5050048828125,-52.30699920654297 170.4429931640625,-52.31100082397461 170.43299865722656,-52.310001373291016 170.41099548339844,-52.30500030517578 170.42599487304688,-52.29899978637695 170.42799377441406,-52.297000885009766 170.41700744628906,-52.29100036621094 170.39700317382812,-52.292999267578125 170.40199279785156,-52.29100036621094 170.25999450683594,-52.24800109863281 170.26199340820312,-52.249000549316406 170.26300048828125,-52.24700164794922 170.26600646972656,-52.23899841308594 170.25399780273438,-52.23899841308594 170.25,-52.237998962402344 170.27000427246094,-52.141998291015625 170.2760009765625,-52.13800048828125 170.25,-52.138999938964844 170.2550048828125,-52.13600158691406 170.25599670410156,-52.11800003051758 170.2480010986328,-52.1150016784668 170.24200439453125,-52.1150016784668 169.95899963378906,-52.03900146484375 169.93600463867188,-52.013999938964844 169.92999267578125,-52.007999420166016 169.92100524902344,-52.00600051879883 169.87600708007812,-51.981998443603516 169.875,-51.90599822998047 169.8769989013672,-51.902000427246094 169.86199951171875,-51.89799880981445 169.81199645996094,-51.88999938964844 169.7969970703125,-51.89099884033203 169.79800415039062,-51.89099884033203 169.8470001220703,-51.87200164794922 169.60899353027344,-51.74599838256836 169.5850067138672,-51.72700119018555 169.60899353027344,-51.731998443603516 169.56199645996094,-51.64799880981445 169.54600524902344,-51.67100143432617 169.51199340820312,-51.65299987792969 169.49899291992188,-51.65800094604492 169.50599670410156,-51.65599822998047 169.45899963378906,-51.665000915527344 169.4320068359375,-51.67599868774414 169.57000732421875,-50.553001403808594 169.5399932861328,-50.50899887084961 169.5679931640625,-50.4379997253418 169.5399932861328,-50.29600143432617 169.5189971923828,-50.22700119018555 169.9759979248047,-49.367000579833984 170.04299926757812,-49.369998931884766 170.08700561523438,-49.361000061035156 170.10800170898438,-49.3650016784668 170.38600158691406,-49.14799880981445 170.73699951171875,-48.152000427246094 170.8280029296875,-47.959999084472656 170.76300048828125,-47.95600128173828 172.6479949951172,-44.77399826049805 173.9770050048828,-42.75699996948242 173.8820037841797,-42.65700149536133 174.0709991455078,-42.49300003051758 174.52499389648438,-41.064998626708984 174.5290069580078,-41.119998931884766 174.47999572753906,-41.194000244140625 174.52099609375,-41.3129997253418 174.52999877929688,-41.32600021362305 174.3470001220703,-41.36899948120117 174.78399658203125,-41.31999969482422 174.7100067138672,-41.30400085449219 174.78700256347656,-41.319000244140625</coordinates>
+            </LineString>
+        </Placemark>
+    </Document>
+</kml>
