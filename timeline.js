@@ -36,8 +36,8 @@ OpenLayers.Timeline = OpenLayers.Class({
         this.createSelectControl();
         this.slider = options.timeline;
         this.curr_speed = parseInt(this.speeds.length / 2);
-//        this.data_format = new options.format();
-        this.data_format = options.format;
+        this.data_format = new options.format();
+//        this.data_format = options.format;
         if (options.date_key) {
             this.data_format.date_key = options.date_key;
         }
@@ -170,7 +170,8 @@ OpenLayers.Timeline = OpenLayers.Class({
 						if( l.features.length == 0 && this.data_format.firstFeature )
               l.addFeatures( this.data_format.firstFeature );
         }
-        this.onFeatureInsert(l);
+        if( this.onFeatureInsert )
+          this.onFeatureInsert(l);
 		    return l;
     },
 
