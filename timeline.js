@@ -78,6 +78,8 @@ OpenLayers.Timeline = OpenLayers.Class({
                         self.data_format.lowerlimit = undefined;
                     }
 
+                    if( !self.data_format.past_seconds )
+                    	self.data_format.past_seconds = 0; // first run
                     self.display_layer = self.updateDisplayLayer();
 
                     self.createSelectControl();
