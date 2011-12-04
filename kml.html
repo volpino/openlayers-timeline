@@ -35,25 +35,26 @@
                 return ((new Date(d)).getTime() / 1000);
             }
 
-			      var in_options = {
-			        'internalProjection': map.baseLayer.projection,
-			        'externalProjection': new OpenLayers.Projection("EPSG:4326")
-			      };
-			      
-			      var kmlOptionsIn = OpenLayers.Util.extend({
-			        extractAttributes: true,
-			        extractStyles: true,
-			        extractTracks: true,
-			        trackAttributes: true,
-			        maxDepth: 2
-			      }, in_options);
+						var in_options = {
+						  'internalProjection': map.baseLayer.projection,
+						  'externalProjection': new OpenLayers.Projection("EPSG:4326")
+						};
+						
+		        var kmlOptionsIn = OpenLayers.Util.extend({
+						  extractAttributes: true,
+						  extractStyles: true,
+						  extractTracks: true,
+						  trackAttributes: true,
+						  maxDepth: 2
+						}, in_options);
 						
             timeline = new OpenLayers.Timeline({map: map,
                                                 timeline: "#timeline",
                                                 date_key: "published",
                                                 date_funct: ts_funct,
                                                 format: OpenLayers.Format.KML,
-                                                formatOptions: kmlOptionsIn
+                                                formatOptions: kmlOptionsIn,
+                                                timedelta: 60*60*24,
                                                 });
 
             $.ajax({
@@ -73,7 +74,7 @@
             }
             else {
                 timeline.cumulative = false;
-            }-
+            }
             timeline.update();
         }
 
