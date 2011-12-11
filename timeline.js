@@ -28,6 +28,7 @@ OpenLayers.Timeline = OpenLayers.Class({
     timedelta: 15552000,  // 6 months
     first: undefined,
     onFeatureInsert: undefined,
+    name_key: undefined,
 
     initialize: function(options) {
         this.map = options.map;
@@ -36,7 +37,8 @@ OpenLayers.Timeline = OpenLayers.Class({
         this.createSelectControl();
         this.slider = options.timeline;
         this.curr_speed = parseInt(this.speeds.length / 2);
-        this.data_format = new options.format( options.formatOptions );
+        this.data_format = new options.format(options.format_options);
+        this.name_key = options.name_key;
         if (options.date_key) {
             this.data_format.date_key = options.date_key;
         }
@@ -55,21 +57,23 @@ OpenLayers.Timeline = OpenLayers.Class({
             disabled: true,
             change: function (e, ui) {
                 if (self.display_layer) {
+                    /*
                     if (self.selectControl) {
-			            var i;
-			            for( i in self.map.popups ){
-			              var popup = self.map.popups[i];
-			              self.map.removePopup(popup);
-			              popup.selectedFeature.popup.destroy();
-			                      popup = null;
-			            }
-			            self.selectControl.deactivate();
-			            self.map.removeControl(self.selectControl);
-			          }
+                        for (var i in self.map.popups) {
+                            var popup = self.map.popups[i];
+                            self.map.removePopup(popup);
+                            console.log(popup.selectedFeature);
+                            var point = popup.selectedFeature.geometry;
+                            console.log(point);
+                            popup.selectedFeature.popup.destroy();
+                        }
+                        self.selectControl.deactivate();
+                        self.map.removeControl(self.selectControl);
+                    }
+                    */
 
                     if (ui) {
-                        self.data_format.past_seconds =
-                          Math.ceil(self.first+(self.current_date-self.first)*(ui.value / 100.0));
+                        self.data_format.past_seconds = Math.ceil(self.first+(self.current_date-self.first)*(ui.value / 100.0));
                     }
                     if (!self.cumulative) {
                         self.data_format.lowerlimit = self.data_format.past_seconds - self.timedelta;
@@ -78,8 +82,9 @@ OpenLayers.Timeline = OpenLayers.Class({
                         self.data_format.lowerlimit = undefined;
                     }
 
-                    if( !self.data_format.past_seconds )
-                    	self.data_format.past_seconds = 0; // first run
+                    if (!self.data_format.past_seconds) {
+                        self.data_format.past_seconds = 0; // first run
+                    }
                     self.display_layer = self.updateDisplayLayer();
 
                     self.createSelectControl();
@@ -87,8 +92,7 @@ OpenLayers.Timeline = OpenLayers.Class({
 
                 var bounds = self.display_layer.getDataExtent();
                 if (bounds && self.cumulative) {
-                    self.map.zoomToExtent( bounds, false);
-                    console.log( 'zoom: ', self.map.zoom );
+                    self.map.zoomToExtent(bounds, false);
                 }
             },
             slide: function(e, ui) {
@@ -134,8 +138,9 @@ OpenLayers.Timeline = OpenLayers.Class({
     createSelectControl: function(){
         var l = this.display_layer;
         this.selectControl = new OpenLayers.Control.SelectFeature(
-                           [l],{clickout: true, toggle: false,
-                                multiple: false, hover: false }
+                                [l],
+                                {clickout: true, toggle: false,
+                                 multiple: false, hover: false }
                              );
         this.map.addControl(this.selectControl);
         this.selectControl.activate();
@@ -149,7 +154,7 @@ OpenLayers.Timeline = OpenLayers.Class({
             }
         });
      },
-    
+
     createDisplayLayer: function() {
         if (!this.map) {
             return false;
@@ -162,20 +167,22 @@ OpenLayers.Timeline = OpenLayers.Class({
     },
 
     updateDisplayLayer: function() {
-      var l = this.display_layer;
-      l.destroyFeatures();
-      this.data_format.firstFeature = undefined;
-        
+        var l = this.display_layer;
+        l.destroyFeatures();
+        this.data_format.firstFeature = undefined;
+
         if (this.current_data) {
             l.addFeatures(this.data_format.read(this.current_data));
             this.first = this.data_format.first;
             this.current_date = this.data_format.current_date;
-            
-            if( l.features.length == 0 && this.data_format.firstFeature )
-              l.addFeatures( this.data_format.firstFeature );
+
+            if (l.features.length == 0 && this.data_format.firstFeature) {
+                l.addFeatures(this.data_format.firstFeature);
+            }
         }
-        if( this.onFeatureInsert )
-          this.onFeatureInsert(l);
+        if (this.onFeatureInsert) {
+            this.onFeatureInsert(l);
+        }
         return l;
     },
 
@@ -188,21 +195,26 @@ OpenLayers.Timeline = OpenLayers.Class({
     },
 
     onFeatureSelect: function(feature) {
-      if( feature.popup )
-        return;
-        
-      if (feature.attributes.count == 0) 
-          return;
-        
+        if (feature.popup)
+            return;
+
+        if (feature.attributes.count == 0)
+            return;
+
         this.selectedFeature = feature;
         var desc = "";
-      
+
         if (feature.attributes.count == 1) {
-          var point = feature.cluster[0];
-            desc += "<h5>" + point.attributes.name + "</h5>";
-          if (point.attributes.description ) 
-            desc = desc + point.attributes.description;
-        } 
+            var point = feature.cluster[0];
+            if (this.name_key) {
+                desc += "<h5>" + point.attributes[this.name_key] + "</h5>";
+            }
+            for (attr in point.attributes) {
+                if (attr != this.name_key) {
+                    desc = desc + "<p>" + point.attributes[attr] + "</p>";
+                }
+            }
+        }
         else if (feature.attributes.count > 1) {
             desc += "<strong>" + feature.cluster.length + " features in this area</strong><br/>";
             desc += "<br/><em>tip: increase the zoom level</em>";
@@ -230,27 +242,26 @@ OpenLayers.Timeline = OpenLayers.Class({
     },
 
     initTimeline: function(data) {
-        past_seconds: 0,
         this.current_data = data;
-    	this.data_format.past_seconds = undefined; // first run
-    
-    	this.data_format.first = undefined;
+        this.data_format.past_seconds = undefined; // first run
+
+        this.data_format.first = undefined;
         this.data_format.lowerlimit = undefined;
         this.data_format.current_date = new Date().getTime() / 1000;
-        
+
         this.selectControl.deactivate();
         this.map.removeControl(self.selectControl);
 
         this.update();
-//        var past_seconds = this.data_format.past_seconds;
+        var past_seconds = this.data_format.past_seconds;
         var firstdate = this.first;
         if (firstdate) {
-         $(this.slider).slider({disabled: false});
-         if (past_seconds - firstdate > 0) {
-             $(this.slider).slider("value", Math.ceil(((past_seconds - firstdate) /
-             (this.current_date - firstdate)) * 100));
-         }
-       }
+            $(this.slider).slider({disabled: false});
+            if (past_seconds - firstdate > 0) {
+                $(this.slider).slider("value", Math.ceil(((past_seconds - firstdate) /
+                (this.current_date - firstdate)) * 100));
+            }
+        }
     },
 
     animateBar: function() {

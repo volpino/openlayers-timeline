@@ -28,13 +28,14 @@
             }
             timeline = new OpenLayers.Timeline({map: map,
                                                 timeline: "#timeline",
+                                                name_key: "title",
                                                 date_key: "published",
                                                 date_funct: ts_funct,
                                                 format: OpenLayers.Format.GeoRSSTimeline});
 
             $.ajax({
                 type: "GET",
-                url: "flickr.xml",
+                url: "data/flickr.xml",
                 dataType: "xml",
                 success: function(data) {
                     $("#status").text("Data loaded");
@@ -63,7 +64,7 @@
   <body>
     <h1 id="title">OpenLayers Timeline GeoRSS Demo</h1>
     <div id="container">
-      <p>You're are seeing the timeline of <a href="flickr.xml">this GeoRSS</a> taken from the GeoTagging group on Flickr</p>
+      <p>You're are seeing the timeline of <a href="data/flickr.xml">this GeoRSS</a> taken from the GeoTagging group on Flickr</p>
       <p id="status">Loading...</p>
       <div id="controls">
         <input type="button" onclick="timeline.togglePlay();" value="Play/Pause" />

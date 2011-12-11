@@ -19,47 +19,44 @@
 
         function init(){
             map = new OpenLayers.Map('map');
-//            layer = new OpenLayers.Layer.WMS("OpenLayers WMS",
-//                    "http://vmap0.tiles.osgeo.org/wms/vmap0",
-//                    {layers: 'basic'}, {numZoomLevels: 5});
-//            map.addLayer(layer);
-			      var gsat = new OpenLayers.Layer.Google("Google Satellite", {
-			        type: google.maps.MapTypeId.SATELLITE,
-			        numZoomLevels: 17
-			      });
-			      map.addLayers([gsat]);
+            var gsat = new OpenLayers.Layer.Google("Google Satellite", {
+                          type: google.maps.MapTypeId.SATELLITE,
+                          numZoomLevels: 17
+            });
+            map.addLayers([gsat]);
 
-            map.setCenter(new OpenLayers.LonLat(174.785, -41.322).transform(new OpenLayers.Projection("EPSG:4326"), map.getProjectionObject()), 5);
-//            map.setCenter(new OpenLayers.LonLat(0, 0), 2);
+            map.setCenter(new OpenLayers.LonLat(174.785, -41.322).
+                transform(new OpenLayers.Projection("EPSG:4326"), map.getProjectionObject()), 5);
             var ts_funct = function(d) {
                 return ((new Date(d)).getTime() / 1000);
             }
 
-						var in_options = {
-						  'internalProjection': map.baseLayer.projection,
-						  'externalProjection': new OpenLayers.Projection("EPSG:4326")
-						};
-						
-		        var kmlOptionsIn = OpenLayers.Util.extend({
-						  extractAttributes: true,
-						  extractStyles: true,
-						  extractTracks: true,
-						  trackAttributes: true,
-						  maxDepth: 2
-						}, in_options);
-						
+            var in_options = {
+                'internalProjection': map.baseLayer.projection,
+                'externalProjection': new OpenLayers.Projection("EPSG:4326")
+            };
+
+            var kml_options_in = OpenLayers.Util.extend({
+                extractAttributes: true,
+                extractStyles: true,
+                extractTracks: true,
+                trackAttributes: true,
+                maxDepth: 2
+            }, in_options);
+
             timeline = new OpenLayers.Timeline({map: map,
                                                 timeline: "#timeline",
+                                                name_key: "name",
                                                 date_key: "published",
                                                 date_funct: ts_funct,
                                                 format: OpenLayers.Format.KML,
-                                                formatOptions: kmlOptionsIn,
+                                                format_options: kml_options_in,
                                                 timedelta: 60*60*24,
                                                 });
 
             $.ajax({
                 type: "GET",
-                url: "nzemperor.kml",
+                url: "data/nzemperor.kml",
                 dataType: "kml",
                 success: function(data) {
                     $("#status").text("Data loaded");
@@ -88,7 +85,7 @@
   <body>
     <h1 id="title">OpenLayers Timeline KML Demo</h1>
     <div id="container">
-      <p>You're are seeing the timeline of <a href="nzemperor.kml">nzemperor.com</a> by <a href="http://www.sirtrack.com">Sirtrack</a></p>
+      <p>You're are seeing the timeline of <a href="data/nzemperor.kml">nzemperor.com</a> by <a href="http://www.sirtrack.com">Sirtrack</a></p>
       <p id="status">Loading...</p>
       <div id="controls">
         <input type="button" onclick="timeline.togglePlay();" value="Play/Pause" />
