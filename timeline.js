@@ -27,16 +27,27 @@ OpenLayers.Timeline = OpenLayers.Class({
     cumulative: true,
     timedelta: 15552000,  // 6 months
     first: undefined,
+    onFeatureInsert: undefined,
+    name_key: undefined,
 
     initialize: function(options) {
         this.map = options.map;
+        this.display_layer = this.createDisplayLayer(),
+        this.map.addLayer(this.display_layer);
+        this.createSelectControl();
         this.slider = options.timeline;
         this.curr_speed = parseInt(this.speeds.length / 2);
-        this.data_format = new options.format();
+        this.data_format = new options.format(options.format_options);
+        this.name_key = options.name_key;
         if (options.date_key) {
             this.data_format.date_key = options.date_key;
         }
+        if( options.timedelta) {
+          this.timedelta = options.timedelta;
+        }
         this.data_format.timestamp_funct = options.date_funct;
+        this.onFeatureInsert = options.onFeatureInsert;
+
         var self = this;
         $(this.slider).slider({
             range: "min",
@@ -46,9 +57,23 @@ OpenLayers.Timeline = OpenLayers.Class({
             disabled: true,
             change: function (e, ui) {
                 if (self.display_layer) {
+                    /*
+                    if (self.selectControl) {
+                        for (var i in self.map.popups) {
+                            var popup = self.map.popups[i];
+                            self.map.removePopup(popup);
+                            console.log(popup.selectedFeature);
+                            var point = popup.selectedFeature.geometry;
+                            console.log(point);
+                            popup.selectedFeature.popup.destroy();
+                        }
+                        self.selectControl.deactivate();
+                        self.map.removeControl(self.selectControl);
+                    }
+                    */
+
                     if (ui) {
-                        self.data_format.past_seconds =
-                          Math.ceil(self.first+(self.current_date-self.first)*(ui.value / 100.0));
+                        self.data_format.past_seconds = Math.ceil(self.first+(self.current_date-self.first)*(ui.value / 100.0));
                     }
                     if (!self.cumulative) {
                         self.data_format.lowerlimit = self.data_format.past_seconds - self.timedelta;
@@ -56,14 +81,18 @@ OpenLayers.Timeline = OpenLayers.Class({
                     else {
                         self.data_format.lowerlimit = undefined;
                     }
-                    self.map.removeLayer(self.display_layer);
-                    self.selectControl.deactivate();
-                    self.map.removeControl(self.selectControl);
+
+                    if (!self.data_format.past_seconds) {
+                        self.data_format.past_seconds = 0; // first run
+                    }
+                    self.display_layer = self.updateDisplayLayer();
+
+                    self.createSelectControl();
                 }
-                self.display_layer = self.createDisplayLayer();
-                if (self.display_layer.getDataExtent() &&
-                    self.cumulative) {
-                    self.map.zoomToExtent(self.display_layer.getDataExtent(), false);
+
+                var bounds = self.display_layer.getDataExtent();
+                if (bounds && self.cumulative) {
+                    self.map.zoomToExtent(bounds, false);
                 }
             },
             slide: function(e, ui) {
@@ -106,24 +135,12 @@ OpenLayers.Timeline = OpenLayers.Class({
                                 }
                             }),
 
-    createDisplayLayer: function() {
-        if (!this.map) {
-            return false;
-        }
-        var l = new OpenLayers.Layer.Vector("display", {
-                    strategies: [new OpenLayers.Strategy.Cluster()],
-                    styleMap: this.defaultStyle
-                });
-
-        if (this.current_data) {
-            this.map.addLayer(l);
-            l.addFeatures(this.data_format.read(this.current_data));
-            this.first = this.data_format.first;
-        }
-
+    createSelectControl: function(){
+        var l = this.display_layer;
         this.selectControl = new OpenLayers.Control.SelectFeature(
-                                 [l],{clickout: true, toggle: false,
-                                      multiple: false, hover: false }
+                                [l],
+                                {clickout: true, toggle: false,
+                                 multiple: false, hover: false }
                              );
         this.map.addControl(this.selectControl);
         this.selectControl.activate();
@@ -136,6 +153,36 @@ OpenLayers.Timeline = OpenLayers.Class({
                 self.onFeatureUnselect(e.feature);
             }
         });
+     },
+
+    createDisplayLayer: function() {
+        if (!this.map) {
+            return false;
+        }
+        var l = new OpenLayers.Layer.Vector("display", {
+                    strategies: [new OpenLayers.Strategy.Cluster()],
+                    styleMap: this.defaultStyle
+                });
+        return l;
+    },
+
+    updateDisplayLayer: function() {
+        var l = this.display_layer;
+        l.destroyFeatures();
+        this.data_format.firstFeature = undefined;
+
+        if (this.current_data) {
+            l.addFeatures(this.data_format.read(this.current_data));
+            this.first = this.data_format.first;
+            this.current_date = this.data_format.current_date;
+
+            if (l.features.length == 0 && this.data_format.firstFeature) {
+                l.addFeatures(this.data_format.firstFeature);
+            }
+        }
+        if (this.onFeatureInsert) {
+            this.onFeatureInsert(l);
+        }
         return l;
     },
 
@@ -148,44 +195,72 @@ OpenLayers.Timeline = OpenLayers.Class({
     },
 
     onFeatureSelect: function(feature) {
-        if (feature.attributes.count > 1) {
-            this.selectedFeature = feature;
-            var desc = "";
-            if (feature.cluster.length > 1) {
-                desc += "<strong>" + feature.cluster.length + " features in this area</strong><br/>";
+        if (feature.popup)
+            return;
+
+        if (feature.attributes.count == 0)
+            return;
+
+        this.selectedFeature = feature;
+        var desc = "";
+
+        if (feature.attributes.count == 1) {
+            var point = feature.cluster[0];
+            if (this.name_key) {
+                desc += "<h5>" + point.attributes[this.name_key] + "</h5>";
             }
-            if (feature.cluster.length > 1) {
-                desc += "<br/><em>tip: increase the zoom level</em>";
+            for (attr in point.attributes) {
+                if (attr != this.name_key) {
+                    desc = desc + "<p>" + point.attributes[attr] + "</p>";
+                }
             }
-            desc += "</div>";
-            var popup = new OpenLayers.Popup.FramedCloud("chicken",
-                        feature.geometry.getBounds().getCenterLonLat(),
-                        new OpenLayers.Size(1000,500),
-                        desc,
-                        null,
-                        true,
-                        this.onPopupClose);
-            popup.selectControl = this.selectControl;
-            popup.selectedFeature = this.selectedFeature;
-            feature.popup = popup;
-            this.map.addPopup(popup);
         }
+        else if (feature.attributes.count > 1) {
+            desc += "<strong>" + feature.cluster.length + " features in this area</strong><br/>";
+            desc += "<br/><em>tip: increase the zoom level</em>";
+            desc += "</div>";
+        }
+        var popup = new OpenLayers.Popup.FramedCloud("chicken",
+                    feature.geometry.getBounds().getCenterLonLat(),
+                    new OpenLayers.Size(1000,500),
+                    desc,
+                    null,
+                    true,
+                    this.onPopupClose);
+        popup.selectControl = this.selectControl;
+        popup.selectedFeature = this.selectedFeature;
+        feature.popup = popup;
+        this.map.addPopup(popup);
     },
 
     onFeatureUnselect: function (feature) {
+        if (feature.popup) {
         this.map.removePopup(feature.popup);
         feature.popup.destroy();
         feature.popup = null;
+      }
     },
 
     initTimeline: function(data) {
         this.current_data = data;
-        this.display_layer = this.createDisplayLayer();
+        this.data_format.past_seconds = undefined; // first run
+
+        this.data_format.first = undefined;
+        this.data_format.lowerlimit = undefined;
+        this.data_format.current_date = new Date().getTime() / 1000;
+
+        this.selectControl.deactivate();
+        this.map.removeControl(self.selectControl);
+
+        this.update();
         var past_seconds = this.data_format.past_seconds;
-        $(this.slider).slider({ disabled: false });
-        if (past_seconds - this.firstpoint > 0) {
-            $(this.slider).slider("value", Math.ceil(((past_seconds-this.firstpoint)
-                                   / (this.current_date-firstpoint)) * 100));
+        var firstdate = this.first;
+        if (firstdate) {
+            $(this.slider).slider({disabled: false});
+            if (past_seconds - firstdate > 0) {
+                $(this.slider).slider("value", Math.ceil(((past_seconds - firstdate) /
+                (this.current_date - firstdate)) * 100));
+            }
         }
     },
 
